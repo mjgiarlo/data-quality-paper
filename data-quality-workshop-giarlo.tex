@@ -1,0 +1,119 @@
+% data-quality-workshop-giarlo.tex
+% Michael J. Giarlo's position paper for the Curating for Data Quality workshop
+% Author: Michael J. Giarlo
+% based upon LaTeX2.09 Guidelines, 9 June 1996
+% TODO: Enter date of submission here
+% Revisions:	2012-08-xx
+
+% TODO: After having produced the .bbl file (from the .bib
+%     file), and prior to final submission, you need to 'insert' your .bbl
+%     file into your source .tex file so as to provide one
+%     'self-contained' source file.
+
+\documentclass{acm_proc_article-sp}
+\begin{document}
+
+% TODO: Revisit this when finished
+\title{The Data Quality Layer Cake\titlenote{Paper prepared for 2012
+    Curating for Data Quality workshop in Arlington, VA}}
+
+% TODO: Revisit this when finished \subtitle{[Extended Abstract]
+% \titlenote{A full version of this paper is available as
+% \textit{Author's Guide to Preparing ACM SIG Proceedings Using
+% \LaTeX$2_\epsilon$\ and BibTeX} at
+% \texttt{www.acm.org/eaddress.htm}}}
+
+\numberofauthors{1} \author{
+  \alignauthor Michael J. Giarlo\\
+  \affaddr{Penn State University}\\
+  \affaddr{E-017 Paterno Library}\\
+  \affaddr{University Park, PA  16802}\\
+  \email{michael@psu.edu} }
+\maketitle
+
+% TODO: Revisit this when finished
+\begin{abstract}
+  This is a position paper about ensuring data quality for e-science via
+  curatorial practices.
+\end{abstract}
+
+% TODO: Revisit this when finished
+% http://www.acm.org/about/class/how-to-use
+% http://www.acm.org/about/class/1998 A category with the (minimum)
+% three required fields
+\category{H.4}{Information Systems Applications}{Miscellaneous}
+% A category including the fourth, optional field follows...
+\category{D.2.8}{Software Engineering}{Metrics}
+
+% TODO: Revisit this when finished
+\terms{Theory}
+
+% TODO: Revisit this when finished
+\keywords{data curation, digital preservation, trust}
+
+\section{Gap Analysis / Challenges}
+More about what problems we're elucidating and for which we're proposing
+solutions.
+
+Science is changing -- how can advances in curation practices aid the
+practice of good science?
+
+What is data quality?
+
+How is data quality ensured?
+
+trust networks - how are they different now? japanese research example (more
+anonymous), galaxyzoo example (much larger). ``quality indicators'' and
+``assurance levels''
+
+\section{The Framework}
+A framework for understanding data quality is as follows.  data quality stack,
+quality as a function of successive indicators
+
+\begin{itemize}
+\item Highest quality data is authentic (``good science:'' reliable instruments,
+  sound theoretical frameworks, etc.)
+\item Evaluation of the authenticity of data requires that data be usable
+  (curation; domain-specific tools, repos, and conventions; file formats)
+\item Usability of data requires that data be accessible, discoverable
+  (metadata), identifiable (citation, management (niche for cultural heritage
+  orgs)), and associated with sufficient context to use it (curation
+  processes)
+\item Data integrity is required for context, usability, authenticity, and
+  quality.
+\end{itemize}
+
+underlying assumption: data preservation (integrity) is necessary but not
+sufficient for data quality. also: context (curation), usability (identity,
+discoverability), trust (authenticity). adds up to quality. related to
+``Semantic Web Stack'': http://en.wikipedia.org/wiki/Semantic_Web_Stack
+
+\section{Angles of Attack}
+Recommendations on ways to resolve the problems above.
+
+need better tools (enumerate what makes 'em better) for curation/data
+integrity (does ScholarSphere help?)
+
+value of curation, learning that early, using it early in research process -
+tie in to crowdsourcing adding value (galaxyzoo) - hack academic culture in
+such a way that good curatorial skills are necessary for good science, need
+``data science'' programs that marry scientific methodology with data curation
+and retention practices
+
+hacking trust networks, new trust networks, more resilient trust networks
+
+% TODO: Revisit this when finished The following two commands are all
+% you need in the initial runs of your .tex file to produce the
+% bibliography for the citations in your paper.
+\bibliography{data-quality-workshop-giarlo}{}
+\bibliographystyle{abbrv}
+
+% TODO: Revisit this when finished You must have a proper ".bib" file
+% and remember to run: latex bibtex latex latex to resolve all
+% references ACM needs 'a single self-contained file'!
+
+% TODO: Revisit this when finished
+% http://www.acm.org/sigs/publications/sigguide-v2.2sp (sec 2.8)
+% \balancecolumns
+
+\end{document}
