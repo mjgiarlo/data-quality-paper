@@ -55,24 +55,42 @@
 More about what problems we're elucidating and for which we're proposing
 solutions.
 
-Testing out citations in this paragraph to see what the references
-section will look like.  First this dude\cite{russom:case} said
-something provocative\cite{timmer:faking} about a
-topic\cite{uw:datascience} that is near and dear\cite{goble:curation}
-to my heart\cite{ogburn:imperative}. Other data\cite{jisc:deluge},
-however, suggest otherwise\cite{heidorn:libraries}, which some find
-quite troubling\cite{williams:lifecycle}. The absence of
-substance\cite{revolutions:litreview} in this paragraph is argued by
-experts\cite{iam:assurance} to be deleterious to the
-field\cite{wiki:identity}. The vast body of
-evidence\cite{wiki:quality} gathered in Never-Never Land, however,
-militates\cite{wiki:semweb} against this.
-
-
-From wikipedia article on Data Quality: ``One industry study estimated the total cost to the US economy of data quality problems at over US\$600 billion per annum (Eckerson, 2002)''
+From wikipedia article on Data Quality: ``One industry study estimated
+the total cost to the US economy of data quality problems at over
+US\$600 billion per annum (Eckerson, 2002)''\cite{eckerson:bottomline}
 
 Science is changing -- how can advances in curation practices aid the
 practice of good science?
+
+post-hoc curation is a fact of life, as researchers lack the
+incentive, the resources, the time, or the expertise to curate their
+own data. this is troubling for the context/documentation/metadata of
+the data, as the creators of the data are best equipped to provide
+this context -- and for the sake of timeliness, while the data are
+fresh in the researcher's mind (``sheer curation or curation at
+source''\cite{curry:community}), it is ideal for this to take place at
+the time of the data's creation.  data that is curated by a party
+other than its creator may suffer from this lack of context.  this
+work needs to be incentivized, however, and/or integrated into the
+researcher's extant workflow else we've learned that curation will be
+an after-thought. post-hoc curation also contributes to the problem of
+scaling up\cite{curry:community} research data curation efforts in
+academia (establish this as a problem per se earlier and tie in the
+crowd-sourcing and automated tools angles?) it's also worth noting
+that sheer curation and post-hoc curation are not mutually exclusive.
+
+crowd-sourcing successes (+) and challenges (-). galaxyzoo is a great
+success story (+). community building (-), incentivizing (-), critical
+mass for network effects (-), wikipedia (+), NYT model (+/ sheer and
+post-hoc ``trust but verify'' model), ChemSpider (+), Reuters/Calais
+(+), PDB (+), 
+
+tools for automated curation (such as subject classification, POS
+tagging, entity extraction, and characterization) help with the
+scalability somewhat, though many of these tools are optimized for
+text-type content, not for e.g. numeric or statistical data though
+some of these processes are easier than others (deduplication,
+normalization of forms, etc.)
 
 What is data quality?
 
@@ -82,11 +100,20 @@ trust networks - how are they different now? japanese research example (more
 anonymous), galaxyzoo example (much larger). ``quality indicators'' and
 ``assurance levels''
 
-
-
 \section{The Framework}
-A framework for understanding data quality is as follows.  data quality stack,
-quality as a function of successive indicators
+A framework for understanding data quality is as follows.  data
+quality stack, quality as a function of successive indicators. (less
+subjective -> more subjective, up the layers)
+
+not meant to be comprehensive, but rather ``a series of quality
+dimensions which represent a set of desirable characteristics for an
+information resource''\cite{curry:community} including the following:
+discoverability/accessibility (curation helps), completeness (curation
+helps), interpretation (context helps, can be provided by curation),
+accuracy, consistency, provenance/reputation (documentation/context,
+authenticity, and trust networks), timeliness.
+
+
 
 \begin{itemize}
 \item Highest quality data is authentic (``good science:'' reliable
