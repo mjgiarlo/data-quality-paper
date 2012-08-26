@@ -58,6 +58,9 @@
 \keywords{data curation, digital preservation, academic libraries,
   stewardship, e-science, research data, trust}
 
+% TODO: Replace all double-dashes with triple-dashes to ensure they
+%       are picked up as m-dashes
+% TODO: Run flyspell-buffer and make spelling corrections
 \section{Scientific Data at Risk}
 Data quality is a pressing, not to mention costly, issue in industry;
 a 2002 study\cite{russom:case} calculated that over \$600 billion per
@@ -198,7 +201,8 @@ effective stewardship, their commitment to providing access to
 high-quality data over the long-term, and their expertise in digital
 preservation and digital curation practices, as ``[digital] curation is a
 process that can ensure the quality of data and its fitness for
-use''\cite{curry:community}.
+use''\cite{curry:community}.  It is worth examining this claim in the
+context of a framework that measures data quality.
 
 % TODO: Revisit whether this section is needed. Not coming together at
 %       the moment.
@@ -213,59 +217,136 @@ use''\cite{curry:community}.
 %example (much larger and more participatory (citizen
 %science)) \cite{adams:galaxyzoo}.
 
-\section{Principles of Data Quality}
-What is data quality?
+\section{Measuring Data Quality}
+There are a number of theoretical frameworks examining data quality
+measures already available, and Knight's 2005 paper compares a
+selection of a dozen ``widely accepted [information quality]
+Frameworks collated from the last decade of [information science]
+research'' \cite{knight:quality}. Common features are identified for
+data quality (or information quality), such as that it is a concept
+with multiple dimensions, wherein the overall quality is a function of
+successive indicators.  Another common feature of data quality
+frameworks is the grouping of quality indicators into categories,
+classes, or levels corresponding to, \textit{e.g.}, semiotic levels,
+layers of intrinsicity and extrinsicity, and the subjectivity /
+objectivity spectrum.
 
-How is data quality ensured?
-
-A framework for understanding data quality is as follows.  data
-quality stack, quality as a function of successive indicators
-(commonly cited in the literature as ``a multi-dimensional concept''
-\cite{knight:quality}). (less subjective -> more subjective, up the
-layers)
-
-not meant to be comprehensive -- as there are plenty of those models
-including the dozen cited in this 2005 paper \cite{knight:quality},
-though in fact this framework maps well to many of the these
-better-developed models -- but rather ``a series of quality dimensions
+The following framework is distilled from Knight's comparison of
+quality frameworks, and constitutes ``a series of quality dimensions
 which represent a set of desirable characteristics for an information
-resource'' \cite{curry:community} including the following:
-discoverability/accessibility (curation helps), completeness (curation
-helps), interpretation (context helps, can be provided by curation),
-accuracy, consistency, provenance/reputation (documentation/context,
-authenticity, and trust networks), timeliness.
+resource'' \cite{curry:community}. The framework is then applied to
+the domain of research data quality as viewed from my perspective,
+that of a digital preservation technologist and practitioner of
+digital curation. It is not offered as a novel framework, nor a
+comprehensive one, but merely as a tool for understanding and
+evaluating the applicability of digital curation and preservation
+practices to the measure of data quality.
 
-map the social and technical best practices from elsewhere to the
-framework. also map the digital curation/preservation divide to the
-framework. do these principles taken together imply that the practice
-of curation (+ preservation) help with the issues around data quality?
+\begin{description}
+\item[Trust] \hfill \\
+  Evaluation of the extent to which data is trusted depends on a set
+  of subjective factors, including whether the data is judged to be
+  authentic, the reputation of the party/ies responsible for the data,
+  and the biases of the person who is evaluating the
+  data\footnote{Trust is a complex issue that though relevant is too
+    far-reaching to be within the the scope of this position paper. It
+    is nonetheless listed in the framework, at the very top of the
+    framework, to establish that the lower layers may be entirely
+    discounted by an individual judging data quality if there are
+    overriding trust issues.}.
+\item[Authenticity] \hfill \\
+  Evaluation of the authenticity of data requires that data be
+  understood. Authenticity in this context is a rough measure of the
+  extent to which the data is judged to be ``good science,'' answering
+  questions pertaining to, \textit{e.g.}, the reliability of the
+  instruments used to gather the data; the soundness of underlying
+  theoretical frameworks; the completeness, accuracy, and validity of
+  the data; and ontological consistency within the data.
+\item[Understandability] \hfill \\
+  Evaluation of the understandability of data requires that there be
+  sufficient context (documentation, metadata, and provenance)
+  describing the data, and that the data is usable.
+\item[Usability] \hfill \\
+  Usability of data requires that data are discoverable and
+  accessible; that data are in a usable file format; that the
+  individual judging the data's quality has an appropriate tool to
+  access the data; and that the data are fixed.
+\item[Integrity] \hfill \\
+  Integrity of data assumes that the data can be proven to be
+  identical, at the bit level, to some prior accepted or verified
+  state. Data integrity is required for usability, understandability,
+  authenticity, trust, and thus overall quality.
+\end{description}
 
-\begin{itemize}
-\item Highest quality data is authentic (``good science:'' reliable
-  instruments, sound theoretical frameworks, completeness, validity,
-  ontological consistency, accuracy)
-\item Evaluation of the authenticity of data requires that data be usable
-  (curation; domain-specific tools, repos, and conventions; file formats)
-\item Usability of data requires that data be accessible, discoverable
-  (metadata), identifiable (citation, management (niche for cultural
-  heritage orgs)), and associated with sufficient documentation /
-  context / provenance to use it (curation processes) (in support of
-  context: ``More sophisticated automation will be required for the
-  management of data and its storage. Automated knowledge management
-  will be needed to explore and exploit data, at several
-  levels. Metadata is key to this capability.'' \cite{jisc:deluge})
-\item Data integrity is required for context, usability, authenticity, and
-  quality.
-\end{itemize}
+The relationship between the quality dimensions in this framework is
+analogous to that of the Semantic Web Layer Cake in that ``each layer
+exploits and uses capabilities of the layers below''
+\cite{wiki:semweb}. Viewed from the bottom up, this framework asserts
+that data integrity is necessary but not sufficient for data quality;
+if the data lacks integrity, it may not be usable, and thus not
+understandable, authenticatable, or trustable -- a very low measure of
+quality. Viewed from the top down, on the other hand, if an individual
+trusts a data set, she likely judges it to be of the highest
+quality.
 
-underlying assumption: data preservation (integrity) is necessary but not
-sufficient for data quality. also: context (curation), usability (identity,
-discoverability), trust (authenticity). adds up to quality. related to
-``Semantic Web Stack'' \cite{wiki:semweb}
+\section{Applying Curation to Data Quality}
+
+Within the defined framework, how might the practice of curation
+help ensure data quality?
+
+The curation lifecycle \cite{dcc:lifecycle} contains actions geared
+towards preservation of the digital asset, which includes
+bit-preservation via a number of possible tactics such as regular
+digital signature (or checksum) verification, replication, media
+refreshing, version management, and file-level backups. These tactics
+taken together should be sufficient to ensure that the data remains in
+the same state as originally processed. Assuming that the data was
+authentic to begin with\footnote{Authenticity is evaluated higher up
+  the stack.}, the effective practice of curation should provide data
+integrity.
+
+Three of the seven sequential actions defined in the lifecycle model
+have a direct impact on the usability of data. First, the Create or
+Receive action\footnote{Again underscoring the mantra that ``curation
+  begins before creation''} should include determination of an
+appropriate file format for the data, choosing a format that is judged
+to be widely accessible and preservable. The Access, Use, \& Reuse
+action ``[e]nsure[s] that data is accessible to both designated users
+and reusers, on a day-to-day basis'', thus ensuring that the data are
+discoverable and made available to potential users of data. The
+Transform action, lastly, includes periodic evaluation of file formats
+and migration to new formats so data remain usable well after the
+original formats have been rendered obsolete.
+
+Context is provided for data, so that users may understand the data,
+both in sequential actions within the curation lifecycle --- those
+being Create or Receive and Preservation Action --- and also within
+the full lifecycle action of Description and Representation
+Information. The generation, extraction, and application of metadata
+by machine agents and humans is thus a key part of the curation
+lifecycle, providing periodic management and addition of context to
+data.  These actions make sure the data's purpose, its impact, and its
+provenance are established over the course of its lifecycle so that
+current and future users can make sense of data that they have
+discovered.
+
+Authenticity and trust as dimensions of data quality are highly
+subjective.  The curation process can document what instruments are
+used to generate data, but not how reliable a user judges those
+instruments to be; it can include metadata about the theoretical
+frameworks underlying the data, but not whether the frameworks are
+theoretically sound; it can clearly establish the parameters of the
+data, but it is up to the user to judge whether those are a complete
+or incomplete set of parameters. The context, provenance, and
+documentation provided by curation are thus critically important in
+arming users of data with the metadata they need to make quality
+judgments but are not capable of independently ensuring data
+authenticity or trust in data.
 
 \section{Areas of Opportunity}
-Recommendations on potential tactics to resolve the problems above --
-tie to numerous problems raised earlier.
+
+\subsection{Curation Models}
+Back to the issue of sheer curation vs. post-hoc curation.
 
 The work involved with sheer curation needs to be incentivized,
 however, and/or integrated into the researcher's extant workflow else
@@ -275,6 +356,10 @@ up\cite{curry:community} research data curation efforts in academia
 (establish this as a problem per se earlier and tie in the
 crowd-sourcing and automated tools angles?) it's also worth noting
 that sheer curation and post-hoc curation are not mutually exclusive.
+
+\subsubsection{Alternative Models}
+Automatic curation and crowd-sourcing should be considered as tiers more
+broadly to deal with issues around scale
 
 on the idea of levels, tiers, or types of curation: ``Data curation
 teams have found it difficult to scale the traditional centralized
@@ -296,6 +381,34 @@ the model to other domains if successful (zooniverse); and implicit in
 the Zooniverse examples is the principle well known in the open source
 software world that products that are defective in some way are more
 likely to be discovered with more eyes on them (quality by consensus)
+
+crowd-sourcing successes (+) and challenges (-). galaxyzoo is a great
+success story (+/ 250K users classified 100s of millions
+\cite{adams:galaxyzoo}). community building (-), incentivizing (-),
+critical mass for network effects (-), wikipedia (+), NYT model (+/
+sheer and post-hoc ``trust but verify'' model), ChemSpider (+),
+Reuters/Calais (+), PDB (+).  social best
+practices\cite{curry:community}: early and sustained stakeholder
+involvement; outreach beyond the community via multiple channels;
+connection of curation activities to a tangible payoff; an appropriate
+and clear governance model. technical best practices: more or less
+community standard data representations; balance between automated and
+human curation with the latter always beating the former; record and
+make available provenance events (trust)
+
+map the social and technical best practices from elsewhere to the
+framework.
+
+need better tools (enumerate what makes 'em better) for curation/data
+integrity (does ScholarSphere help?) tools for automated curation
+(such as subject classification, POS tagging, entity extraction,
+automatic vocabulary assignment, and characterization) help with the
+scalability somewhat, though many of these tools are optimized for
+text-type content, not for e.g. numeric or statistical data though
+some of these processes are easier than others (deduplication,
+normalization of forms, etc.)
+
+\subsection{Roles on Campus}
 
 The activities required for curation and for preservation also require
 collaboration between libraries and researchers, if libraries are to
@@ -334,28 +447,7 @@ processes pertaining to personal digital curation
 the culture is that of extreme decentralization or sparse
 collaboration.
 
-crowd-sourcing successes (+) and challenges (-). galaxyzoo is a great
-success story (+/ 250K users classified 100s of millions
-\cite{adams:galaxyzoo}). community building (-), incentivizing (-),
-critical mass for network effects (-), wikipedia (+), NYT model (+/
-sheer and post-hoc ``trust but verify'' model), ChemSpider (+),
-Reuters/Calais (+), PDB (+).  social best
-practices\cite{curry:community}: early and sustained stakeholder
-involvement; outreach beyond the community via multiple channels;
-connection of curation activities to a tangible payoff; an appropriate
-and clear governance model. technical best practices: more or less
-community standard data representations; balance between automated and
-human curation with the latter always beating the former; record and
-make available provenance events (trust)
-
-need better tools (enumerate what makes 'em better) for curation/data
-integrity (does ScholarSphere help?) tools for automated curation
-(such as subject classification, POS tagging, entity extraction,
-automatic vocabulary assignment, and characterization) help with the
-scalability somewhat, though many of these tools are optimized for
-text-type content, not for e.g. numeric or statistical data though
-some of these processes are easier than others (deduplication,
-normalization of forms, etc.)
+\subsection{Education, Outreach, Training, and Acculturation}
 
 value of curation, learning that early, using it early in research process -
 tie in to crowdsourcing adding value (galaxyzoo) - hack academic culture in
