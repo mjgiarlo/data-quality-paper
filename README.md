@@ -1,4 +1,4 @@
-# Data Quality Layer Cake
+# Data Quality and Digital Curation (no title set yet)
 
 This is a position paper defining layers of data quality, identifying
 areas for improvement, and recommending strategic points of
