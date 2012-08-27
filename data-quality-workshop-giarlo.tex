@@ -2,13 +2,7 @@
 % Michael J. Giarlo's position paper for the Curating for Data Quality workshop
 % Author: Michael J. Giarlo
 % based upon LaTeX2.09 Guidelines, 9 June 1996
-% TODO: Enter date of submission here
-% Revisions:	2012-08-xx
-
-% TODO: After having produced the .bbl file (from the .bib
-%     file), and prior to final submission, you need to 'insert' your .bbl
-%     file into your source .tex file so as to provide one
-%     'self-contained' source file.
+% Revisions:	2012-08-27
 
 \documentclass{acm_proc_article-sp}
 \usepackage[T1]{fontenc}
@@ -17,15 +11,9 @@
 \usepackage{hyperref}
 \begin{document}
 
-% TODO: Revisit this when finished
-\title{Academic Libraries as Data Quality Hubs\titlenote{Paper prepared for 2012
-    Curating for Data Quality workshop in Arlington, VA}}
-
-% TODO: Revisit this when finished \subtitle{[Extended Abstract]
-% \titlenote{A full version of this paper is available as
-% \textit{Author's Guide to Preparing ACM SIG Proceedings Using
-% \LaTeX$2_\epsilon$\ and BibTeX} at
-% \texttt{www.acm.org/eaddress.htm}}}
+\title{Academic Libraries as Data Quality Hubs\titlenote{Paper
+    prepared for NSF-sponsored 2012 Curating for Data Quality workshop
+    in Arlington, VA}}
 
 \numberofauthors{1} \author{
   \alignauthor Michael J. Giarlo\\
@@ -35,32 +23,28 @@
   \email{michael@psu.edu} }
 \maketitle
 
-% TODO: Revisit this when finished
 \begin{abstract}
-  This is a position paper about ensuring data quality for e-science via
-  curatorial practices.
-  Take some language out of the first few sections, tie back to the
-  paper title.
+  This position paper argues that academic libraries have a critical
+  role to play serving as data quality hubs on campus, based on the
+  need for increased data quality for ``e-science'' and on academic
+  libraries' record of providing digital curation and preservation
+  services. Scientific data are shown to be sufficiently at risk to
+  demonstrate a clear niche for such services to be provided. Data
+  quality measurements are defined, and digital curation processes are
+  explained and mapped to these measurements in order to establish
+  that academic libraries already have sufficient competencies
+  ``in-house'' to provide data quality services. Opportunities for
+  improvement and challenges are identified as areas that are fruitful
+  for future research and exploration.
 \end{abstract}
 
-% TODO: Revisit this when finished
-% http://www.acm.org/about/class/how-to-use
-% http://www.acm.org/about/class/1998
-% A category with the (minimum) three required fields
+\category{E.0}{Data}{General}
 \category{H.4}{Information Systems Applications}{Miscellaneous}
-% A category including the fourth, optional field follows...
-\category{D.2.8}{Software Engineering}{Metrics}
+\category{H.3.7}{Digital Libraries}{General}
 
-% TODO: Revisit this when finished
-\terms{Theory}
+\keywords{data quality, digital curation, digital preservation,
+  academic libraries, stewardship, e-science, research data, trust}
 
-% TODO: Revisit this when finished
-\keywords{data curation, digital preservation, academic libraries,
-  stewardship, e-science, research data, trust}
-
-% TODO: Replace all double-dashes with triple-dashes to ensure they
-%       are picked up as m-dashes
-% TODO: Run flyspell-buffer and make spelling corrections
 \section{Scientific Data at Risk}
 Data quality is a pressing, not to mention costly, issue in industry;
 a 2002 study\cite{russom:case} calculated that over \$600 billion per
@@ -136,7 +120,7 @@ sheer size, computational elements, reliance on and integration with
 software, associated visualizations, few or competing standards,
 distributed ownership, dispersed storage, inaccessibility, lack of
 documented provenance, complex and dynamic nature, and the concomitant
-need for a specialized knowledge base -- and experience -- to handle
+need for a specialized knowledge base --- and experience --- to handle
 data.  Data also may be endangered by the practices of scholars who
 regard their data as having little value beyond the confines of a
 small group, a specific project, or a specified period''
@@ -150,8 +134,8 @@ or the expertise to curate their own data\footnote{Hereafter referred
   to as ``sheer curation or curation at source''
   \cite{curry:community}.}. For some massive data sets, furthermore,
 it is difficult to imagine, \textit{e.g.}, a research institute or
-science department ever having the resources to curate their data at
-the source.
+physics department ever having the resources to curate their own data
+at scale.
 
 The practice of \textit{post-hoc} curation (vs. ``sheer curation'') is
 less than ideal for a number of reasons.
@@ -185,37 +169,44 @@ representational schemes for the data and metadata will be
 required. No one individual will have all of the required skills. Data
 curators will need to collaborate closely with the data providers to
 understand the data''\cite{heidorn:libraries}. Whether the researchers
-will have sufficnet time, resources, and inclination to collaborate
+will have sufficient time, resources, and inclination to collaborate
 with academic libraries on the work of curating research data at scale
 is yet to be seen.
 
 The final reason, and possibly the most limiting, is that of the
 misalignment between the scale of the need for on-campus data curation
-and the level of commitment by academic libraries to address this
-need (as measured by the amount of resources allocated to this need
+and the level of commitment by academic libraries to address this need
+(as measured by the amount of resources allocated to this need
 vs. other needs).
 
-Academic libraries are nonetheless uniquely positioned to address the
+Academic libraries are nonetheless uniquely positioned to tackle the
 problem of data quality in e-science by virtue of their record of
 effective stewardship, their commitment to providing access to
 high-quality data over the long-term, and their expertise in digital
-preservation and digital curation practices, as ``[digital] curation is a
-process that can ensure the quality of data and its fitness for
+preservation and digital curation practices, as ``[digital] curation
+is a process that can ensure the quality of data and its fitness for
 use''\cite{curry:community}.  It is worth examining this claim in the
-context of a framework that measures data quality.
+context of a framework for measuring data quality.
 
-% TODO: Revisit whether this section is needed. Not coming together at
-%       the moment.
-%\subsection{Trust Networks, Briefly Considered}
+% This stuff doesn't seem to fit any longer
 %
-%While cyberinfrastructure has become more robust, usage of the
-%Internet continued to grow; between 2000 and 2010 alone, Internet
-%usage rose from nearly 7\% of the global population to over 30\%
-%\footnote{Data visualized here:\url{http://www.google.com/publicdata/explore?ds=d5bncppjof8f9_&met_y=it_net_user_p2&tdim=true&dl=en&hl=en&q=global+internet+usage}}.
-%trust networks - how are they different now? japanese research example
-%(more numerous and more anonymous) \cite{timmer:faking}, galaxyzoo
-%example (much larger and more participatory (citizen
-%science)) \cite{adams:galaxyzoo}.
+% While cyberinfrastructure has become more robust, usage of the
+% Internet continued to grow; between 2000 and 2010 alone, Internet
+% usage rose from nearly 7\% of the global population to over 30\%
+% \footnote{Data visualized here:\url{http://www.google.com/publicdata/explore?ds=d5bncppjof8f9_&met_y=it_net_user_p2&tdim=true&dl=en&hl=en&q=global+internet+usage}}.
+% trust networks - how are they different now? japanese research example
+% (more numerous and more anonymous) \cite{timmer:faking}, galaxyzoo
+% example (much larger and more participatory (citizen
+% science)) \cite{adams:galaxyzoo}.
+%
+% refer to \cite{timmer:faking} issue. hacking trust networks, new trust
+% networks, more resilient trust networks -- look into identity
+% assurance (concept from federated identity and access management area)
+% and assurance levels, specifically applying it to data authenticity
+% (now that researcher ID systems such as ORCID or ISNI are gaining
+% steam, perhaps requiring more than signatures (OAuth via ORCID, etc.)
+% could help, as could karma-like systems) ``assurance levels'' as relevant
+% concepts?
 
 \section{Measuring Data Quality}
 There are a number of theoretical frameworks examining data quality
@@ -284,15 +275,16 @@ exploits and uses capabilities of the layers below''
 \cite{wiki:semweb}. Viewed from the bottom up, this framework asserts
 that data integrity is necessary but not sufficient for data quality;
 if the data lacks integrity, it may not be usable, and thus not
-understandable, authenticatable, or trustable -- a very low measure of
+understandable, authentic, or trustable --- a very low measure of
 quality. Viewed from the top down, on the other hand, if an individual
-trusts a data set, she likely judges it to be of the highest
-quality.
+trusts a data set, she likely judges it to be of the highest quality.
 
 \section{Applying Curation to Data Quality}
 
-Within the defined framework, how might the practice of curation
-help ensure data quality?
+Within the defined framework, how might the practice of curation help
+ensure data quality?
+
+\subsection{Integrity}
 
 The curation lifecycle \cite{dcc:lifecycle} contains actions geared
 towards preservation of the digital asset, which includes
@@ -304,6 +296,8 @@ the same state as originally processed. Assuming that the data was
 authentic to begin with\footnote{Authenticity is evaluated higher up
   the stack.}, the effective practice of curation should provide data
 integrity.
+
+\subsection{Usability}
 
 Three of the seven sequential actions defined in the lifecycle model
 have a direct impact on the usability of data. First, the Create or
@@ -318,6 +312,8 @@ Transform action, lastly, includes periodic evaluation of file formats
 and migration to new formats so data remain usable well after the
 original formats have been rendered obsolete.
 
+\subsection{Understandability}
+
 Context is provided for data, so that users may understand the data,
 both in sequential actions within the curation lifecycle --- those
 being Create or Receive and Preservation Action --- and also within
@@ -329,6 +325,8 @@ data.  These actions make sure the data's purpose, its impact, and its
 provenance are established over the course of its lifecycle so that
 current and future users can make sense of data that they have
 discovered.
+
+\subsection{Authenticity and Trust}
 
 Authenticity and trust as dimensions of data quality are highly
 subjective.  The curation process can document what instruments are
@@ -346,186 +344,360 @@ authenticity or trust in data.
 \section{Areas of Opportunity}
 
 \subsection{Curation Models}
-Back to the issue of sheer curation vs. post-hoc curation.
+Given the issues with the practice of \textit{post-hoc} curation
+raised above, it is worth examining alternative curation models. This
+is not to suggest that one model of curation is to be selected
+exclusively; a mix of \textit{post-hoc} curation and
+curation-at-source models will likely be in place at most
+institutions.
 
-The work involved with sheer curation needs to be incentivized,
-however, and/or integrated into the researcher's extant workflow else
-we've learned that curation will be an after-thought. post-hoc
-curation also contributes to the problem of scaling
-up\cite{curry:community} research data curation efforts in academia
-(establish this as a problem per se earlier and tie in the
-crowd-sourcing and automated tools angles?) it's also worth noting
-that sheer curation and post-hoc curation are not mutually exclusive.
+The work required for doing curation at the source needs to be
+incentivized and integrated into the researcher's extant
+workflows. Unless there are clear and valuable incentives for
+researchers to spend time and thought on curatorial work, and unless
+curation can be made to fit into the way researchers currently work,
+curation will be an after-thought, and thus so will data quality.
 
-\subsubsection{Alternative Models}
-Automatic curation and crowd-sourcing should be considered as tiers more
-broadly to deal with issues around scale
+These different curatorial models are not mutually exclusive and in
+fact it may be ideal to combine them, leveraging both the researcher's
+deep domain knowledge and the professional curator's commitment,
+expertise, and tools to preserve data quality over time.
 
-on the idea of levels, tiers, or types of curation: ``Data curation
-teams have found it difficult to scale the traditional centralized
+\subsubsection{Scaling \textit{Post-Hoc} Curation}
+
+Curry has examined a number of successful community-based curation
+models, which may offer academic libraries a way to scale
+\textit{post-hoc} curation and deal with the aforementioned
+deficiencies of this approach: ``[d]ata curation teams have found it
+difficult to scale the traditional [\textit{post-hoc} curation]
 approach and have tapped into community crowd-sourcing and automated
-and semi-automated curation algorithms.''\cite{curry:community}
+and semi-automated curation algorithms'' \cite{curry:community}.
 
-on crowd-sourcing as an alternative to sheer curation and proxy
-curation, specifically as a tactic that can be applied as a stopgap
-proxy measure. learn from galaxyzoo/zooniverse example: interesting
-data, compellingly visualized; incentives like competition and game
-feel and just plain involvement with real research with an opportunity
-to make a novel scientific discovery (``Hanny's Voorwerp''); balance
-crowd curation with expert verification \cite{adams:galaxyzoo};
-reliance on network effects to achieve accurate data over time;
-support formation of user-created and -managed communities (interest
-groups and moderators and subforums \cite{adams:galaxyzoo}; identify,
-engage, and nurture 'champions' or deputies in the community; expand
-the model to other domains if successful (zooniverse); and implicit in
-the Zooniverse examples is the principle well known in the open source
-software world that products that are defective in some way are more
-likely to be discovered with more eyes on them (quality by consensus)
+The rise of the ``citizen science'' paradigm, such as demonstrated in
+the Galaxy Zoo and Zooniverse projects
+\cite{wiki:galaxyzoo,adams:galaxyzoo}, suggests community
+crowd-sourcing as a tactic that may be used to complement an
+institution's curation model. These initiatives leverage the ``wisdom
+of the crowd'' in curating\footnote{Or, at least, classifying,
+  cataloging, and otherwise annotating these data sets, even if it not
+  inclusive of activities from around the entire curation lifecycle.}
+massive data sets such as the astronomical image data in the original
+Galaxy Zoo project. Galaxy Zoo in particular has been wildly
+successful, attracting a user base numbering into the hundreds of
+thousands, who have worked together to classify hundreds of millions
+of records \cite{adams:galaxyzoo}.
 
-crowd-sourcing successes (+) and challenges (-). galaxyzoo is a great
-success story (+/ 250K users classified 100s of millions
-\cite{adams:galaxyzoo}). community building (-), incentivizing (-),
-critical mass for network effects (-), wikipedia (+), NYT model (+/
-sheer and post-hoc ``trust but verify'' model), ChemSpider (+),
-Reuters/Calais (+), PDB (+).  social best
-practices\cite{curry:community}: early and sustained stakeholder
-involvement; outreach beyond the community via multiple channels;
-connection of curation activities to a tangible payoff; an appropriate
-and clear governance model. technical best practices: more or less
-community standard data representations; balance between automated and
-human curation with the latter always beating the former; record and
-make available provenance events (trust)
+There are numerous incentives at play in crowdsourcing such as access
+to broadly interesting and compellingly visualized data; competition;
+and a desire for the layperson to be involved with \textit{bona fide}
+research, with opportunities to make novel scientific discoveries
+despite limited domain expertise. Consider ``Hanny's
+\textit{Voorwerp}\cite{wiki:voorwerp},'' an astronomical body
+discovered in Galaxy Zoo's data set by an amateur astronomer. The
+\textit{Voorwerp} is now being studied by more than one professional
+astronomer, studies that may never have happened if not for the
+serendipitous discovery of an untrained curator.  There are numerous
+other collaborative or crowd-sourced curation efforts highlighted in
+Curry's chapter on community data curation \cite{curry:community}.
 
-map the social and technical best practices from elsewhere to the
-framework.
+Galaxy Zoo and other Zooniverse projects demonstrate aspects of a
+model that could be repurposed in academic libraries as libraries seek
+models for research data curation that scale out.
 
-need better tools (enumerate what makes 'em better) for curation/data
-integrity (does ScholarSphere help?) tools for automated curation
-(such as subject classification, POS tagging, entity extraction,
-automatic vocabulary assignment, and characterization) help with the
-scalability somewhat, though many of these tools are optimized for
-text-type content, not for e.g. numeric or statistical data though
-some of these processes are easier than others (deduplication,
-normalization of forms, etc.)
+As mentioned earlier, some combination of \textit{post-hoc} curation
+and curation-at-source seems effective. The Galaxy Zoo project
+balances crowd-sourced curation with verification by trained
+astronomers \cite{adams:galaxyzoo}, who verify samples of curatorial
+work over time, thus enabling network effects to take place --- this
+form of training or correction is not unlike the balance between human
+correction and machine learning algorithms, or, \textit{e.g.}, the
+reCAPTCHA\footnote{\url{http://www.google.com/recaptcha}} service. This sort
+of delegation of quality to the community is not unlike a principle
+found for instance in the open source software world, which is that
+the more eyes are on a codebase, the more likely it is that defects
+will be found and corrected.
 
-\subsection{Roles on Campus}
+The challenges that face academic libraries in leveraging
+crowd-sourcing as a critical component of an institutional data
+curation strategy, each of which bears more in-depth consideration or
+research, are finding or allocating sufficient resources to build
+tools; finding effective incentives to curate research data; building
+a community around that data that is large enough to realize the
+benefits of network effects; and coming up with a model that puts the
+``trust but verify'' strategy, whereby a sampling of crowd-curated
+records is checked for quality and corrected if need be, into effect
+at scale.
 
-The activities required for curation and for preservation also require
-collaboration between libraries and researchers, if libraries are to
-play a role in in providing data quality on campus. The DMP
-requirement gives libraries an 'in.' libraries' experience can be
-particularly helpful during the data collection phase (metadata, file
-format standards, provenance, etc.) and also during appraisal and
-selection, as librarians have been doing collection development for
-centuries. there is also a role at this stage for collaborative
-modeling: determining boundaries between e.g. objects and bitstreams,
-deciding which things will receive new persistent identifiers, etc.
+Curry \cite{curry:community} has identified a number of social and
+technical best practices around community curation, which may be
+useful in addressing these challenges: early and sustained stakeholder
+involvement; outreach beyond the existing community via multiple
+channels including both emerging social media and more traditional
+channels such as newsletters and mass email; connection of curation
+activities to tangible payoffs; an appropriate and clear governance
+model; community-standard data representations; balance between
+automated and human curation with the latter always overriding the
+former; and recording and displaying provenance events to provide
+additional context to crowd curators and users.
 
-some \cite{heidorn:libraries} argue that the library is the natural
-place for digital data to then be deposited, preserved, and
-migrated. while I agree that from a consolidation of services
-perspective, it makes sense to have these functions centrally provided
-on campus, the library may or may not be the best service provider --
-central IT, for instance, may have more robust infrastructure around
-information security, identity and access management, disaster
-recovery, high availability, hardware lifecycling, media refresh, and
-so forth. a partnership between the libraries, which have experience
-and expertise in curatorial and preservation practices, and a central
-repository service provider (whether that's the library or not) seems
-most conducive to the long-term viability of research data.
+In addition to human curation, whether via trained curators or citizen
+curators in ``the crowd,'' there is a growing number of increasingly
+sophisticated tools for automated curation which could be used as a
+less costly and more timely tier of curation (until such time as a
+human curator has time to curate a data set). Tools for automated
+curation such as for subject classification, part-of-speech tagging,
+semantic entity extraction, and characterization can provide
+documentation and context to enable some level of understandability,
+usability, authenticity, and trust. Automated curation can thus help
+with data quality in a way that scales in a less resource-constrained
+way than requiring intensive human curation of every data set. It is
+worth noting that some of these tools are optimized for text-type
+content, not \textit{e.g.} for numeric, statistical, or ``blob-like''
+data.
 
-where libraries lack the resources to serve as a central service
-provider, they may play a less active and equally vital role. use
-subject liaison connections for outreach and marketing, plus
-connections to campus research/sponsored programs office, and offer
-services around information clearinghouse (``if you're in Bio, you can
-submit to these subject repos, and if you're in Linguistics, you can
-take advantage of this other central IT service, etc.''). libraries
-can also help w/ instruction particularly around practical tools and
-processes pertaining to personal digital curation
-\cite{williams:lifecycle}, especially helpful in organizations where
-the culture is that of extreme decentralization or sparse
-collaboration.
+\subsection{Academic Libraries as Data Quality Hubs}
 
-\subsection{Education, Outreach, Training, and Acculturation}
+Academic libraries have an opportunity to serve as data quality hubs
+on campus, extending their established digital curation and
+preservation services to the research enterprise, doing for e-science
+what libraries have a wealth of experience doing for other areas of
+scholarly communication. With the scramble to establish data
+management support services in the wake of the NSF's data management
+plan requirement, the timing is opportune to take advantage of the new
+and reinforced connections between libraries and researchers by
+offering new services around data quality.
 
-value of curation, learning that early, using it early in research process -
-tie in to crowdsourcing adding value (galaxyzoo) - hack academic culture in
-such a way that good curatorial skills are necessary for good science, need
-``data science'' programs that marry scientific methodology with data curation
-and retention practices \cite{uw:datascience}
+% this para no longer seems necessary
+%
+% Some have argued that the library is the optimal home for digital
+% blah...  \cite{heidorn:libraries} argue that the library is the
+% natural place for digital data to then be deposited, preserved, and
+% migrated. while I agree that from a consolidation of services
+% perspective, it makes sense to have these functions centrally provided
+% on campus, the library may or may not be the best service provider --
+% central IT, for instance, may have more robust infrastructure around
+% information security, identity and access management, disaster
+% recovery, high availability, hardware lifecycling, media refresh, and
+% so forth. a partnership between the libraries, which have experience
+% and expertise in curatorial and preservation practices, and a central
+% repository service provider (whether that's the library or not) seems
+% most conducive to the long-term viability of research data.
 
-the onus is on cultural heritage institutions to make the value-added
-argument regarding curation and preservation of data to researchers.
-funding agencies can help with this, as can academic research offices
-and subject disciplines and institutes, where such strategic
-partnerships are viable.  also: IT has a lot to offer in this domain,
-opportunity for increased partnership.
+Libraries that lack the resources to sustain a new university service
+around data quality, or libraries on campuses where other
+organizations (such as central IT) might be better resourced or
+positioned to provide such services, may play a less active but
+equally vital role. Libraries are in large part the centers of campus,
+where so much of the institution's research, publishing, and
+instruction come together. Librarians that serve as liaisons to
+academic departments and research institutes provide a crucial
+connection that libraries could use for outreach and marketing in the
+area of data quality services; though the libraries may not provide
+the services themselves, they may serve a consultative role, pointing
+at relevant services on campus and abroad, helping to ``knit'' them
+together for the research enterprise.
 
-``There is a need for a close linking between digital data archives,
-scholarly publications, and associated communication. The potential
-for an expanded role for research libraries in the area of digital
-data stewardship affords opportunities to address these important
-linkages.'' \cite{arl:stewardship}
+Libraries can also offer assistance in the form of instruction, not
+radically different from existing information literacy programs,
+particularly around practical tools and processes pertaining to
+personal digital curation \cite{williams:lifecycle}. Such instruction
+could be especially helpful at institutions where the culture is that
+of extreme decentralization or sparse collaboration.
 
-``A change in both the culture of federal funding agencies
-and of the research enterprise regarding digital data stewardship is
-necessary if the programs and initiatives that support the long-term
-preservation, curation, and stewardship of digital data are to be
-successful.'' \cite{arl:stewardship}
+There is a tremendous opportunity as well to offer workshops and
+otherwise emphasize the value of curation in providing data quality
+for e-science, and also to publicize the ``curation begins before
+creation'' mantra. The sooner libraries can insert themselves into the
+research process, the better the data quality situation will be on
+campus. Libraries need to figure out how to hack academic culture and
+scientific practice in such a way that curatorial skills considered
+part of the new scientific process.
 
-this may require reskilling, reeducating, rehiring, reorganizing,
-retraining, embedding, and more. substantiated in \cite{jisc:deluge}
-and also there's this: ``Knowing that we should not and cannot save
-everything, librarians should apply archival strategies, principles,
-and practices to selection and curation of data. We may start by
-identifying at-risk data that require urgent attention. A survey of
-our special and general collections may discover and expose data we
-already own amid our other holdings. Our current methods of cataloging
-and metadata application will likely need enhancement''
-\cite{ogburn:imperative} (archival principles!)
+New ``data science'' programs such as the certificate program at the
+University of Washington \cite{uw:datascience} give the author hope
+that there is some movement in this area. The focus on data gathering,
+analysis, and visualization is an important start; quality, however,
+is sorely missing. A more complete degree program in data science
+would effectively combine these topics with those within data curation
+and retention, pulling together domain-specific knowledge, scientific
+methodology, computer science techniques, and best practices from the
+information science, information technology, and cultural heritage
+realms to ensure effective management of data quality over time.
 
-librarians need the sort of skills to pull this off, etc. (riff on
-this some more, about librarians needing to evolve to manage the
-scalability issues around doing campuswide preservation and curation
-of reserach data.) so too must researchers!  incorporate data mgmt
-into info lit courses, or add new data lit courses for undergrads and
-grads, encourage attendance as part of DMPs?
+The onus is on cultural heritage institutions such as academic
+libraries to make this happen, a daunting and enormous challenge to be
+realistic. It falls to us to make a convincing value-added argument
+regarding curation and preservation of data to researchers. Funding
+agencies like the NSF and NIH can help with this by continuing to
+require substantial data management plans, as can academic research
+offices and subject disciplines and institutes; forging or
+strengthening partnerships with these departments would be strategic
+for libraries on campus. This recommendation echoes one of the
+findings of the 2006 Association of Research Libraries report on data
+stewardship, namely that ``[a] change in both the culture of federal
+funding agencies and of the research enterprise regarding digital data
+stewardship is necessary if the programs and initiatives that support
+the long-term preservation, curation, and stewardship of digital data
+are to be successful'' \cite{arl:stewardship}.
 
-``funding and planning for the care and retention of data must be
-built into the front end, not the back end, of the research
-process. Data files must be attended to while they are compiled and
-analyzed in order to keep them available for a reasonable life
-span. This will require librarians to be conversant with the language
-and methods of science, at the table for campus cyberinfrastructure
-planning, and working with researchers at the beginning stages of
-grant planning'' \cite{ogburn:imperative}
+% Not really a good fit anymore.
+%
+% ``There is a need for a close linking between digital data archives,
+% scholarly publications, and associated communication. The potential
+% for an expanded role for research libraries in the area of digital
+% data stewardship affords opportunities to address these important
+% linkages.'' \cite{arl:stewardship}
 
-data science programs such as \cite{uw:datascience} are a good start,
-but could use more of an emphasis on data quality and curation in
-addition to gathering, analysis, and visualization.
+Are academic libraries adequately prepared for this role?  A new suite
+of data quality services on campus may require not insignificant
+re-skilling and re-education of the workforce, and may also require
+some reorganization and redefinition of positions \cite{jisc:deluge}.
 
-refer to \cite{timmer:faking} issue. hacking trust networks, new trust
-networks, more resilient trust networks -- look into identity
-assurance (concept from federated identity and access management area)
-and assurance levels, specifically applying it to data authenticity
-(now that researcher ID systems such as ORCID or ISNI are gaining
-steam, perhaps requiring more than signatures (OAuth via ORCID, etc.)
-could help, as could karma-like systems) ``assurance levels'' as relevant
-concepts?
+% No longer a great fit.
+%
+% ``Knowing that we should not and cannot save everything, librarians
+% should apply archival strategies, principles, and practices to
+% selection and curation of data. We may start by identifying at-risk
+% data that require urgent attention. A survey of our special and
+% general collections may discover and expose data we already own amid
+% our other holdings. Our current methods of cataloging and metadata
+% application will likely need enhancement'' \cite{ogburn:imperative}
+% (archival principles!)
 
-% TODO: Revisit this when finished The following two commands are all
-% you need in the initial runs of your .tex file to produce the
-% bibliography for the citations in your paper.
-\bibliography{data-quality-workshop-giarlo}{}
-\bibliographystyle{abbrv}
+% This is kinda duplicative now.
+%
+% librarians need the sort of skills to pull this off, etc. (riff on
+% this some more, about librarians needing to evolve to manage the
+% scalability issues around doing campuswide preservation and curation
+% of reserach data.) so too must researchers!  incorporate data mgmt
+% into info lit courses, or add new data lit courses for undergrads and
+% grads, encourage attendance as part of DMPs?
 
-% TODO: Revisit this when finished You must have a proper ".bib" file
-% and remember to run: latex bibtex latex latex to resolve all
-% references ACM needs 'a single self-contained file'!
+I agree strongly with Ogburn, who argues that ``funding and planning
+for the care and retention of data must be built into the front end,
+not the back end, of the research process. Data files must be attended
+to while they are compiled and analyzed in order to keep them
+available for a reasonable life span. This will require librarians to
+be conversant with the language and methods of science, at the table
+for campus cyberinfrastructure planning, and working with researchers
+at the beginning stages of grant planning''
+\cite{ogburn:imperative}. Academic libraries \textbf{need} to be
+conversant with the language and methods of science, and to assure we
+are at the table for campus cyberinfrastructure. We have the expertise
+and the challenge of data quality is well within the traditional
+mission of libraries. The time has come for academic libraries to
+serve as data quality hubs on campus to enable a new generation of
+scientific discovery and inquiry for the good of our society.
 
-% TODO: Revisit this when finished
-% http://www.acm.org/sigs/publications/sigguide-v2.2sp (sec 2.8)
-% \balancecolumns
+% No longer needed since the .bbl has been included?
+%
+% \bibliography{data-quality-workshop-giarlo}{}
+% \bibliographystyle{abbrv}
+
+% Here is the inserted .bbl file
+\begin{thebibliography}{10}
+
+\bibitem{wiki:semweb}
+\url{http://en.wikipedia.org/wiki/Semantic_Web_Stack}.
+
+\bibitem{wiki:galaxyzoo}
+\url{http://en.wikipedia.org/wiki/Galaxy_Zoo}.
+
+\bibitem{wiki:voorwerp}
+\url{http://en.wikipedia.org/wiki/Hanny\'s_Voorwerp}.
+
+\bibitem{adams:galaxyzoo}
+T.~Adams.
+\newblock Galaxy zoo and the new dawn of citizen science.
+\newblock {\em The Guardian}, March 2012.
+\newblock
+  \url{http://www.guardian.co.uk/science/2012/mar/18/galaxy-zoo-crowdsourcing-%
+citizen-scientists}.
+
+\bibitem{knight:quality}
+S.~Knight and J.~Burn.
+\newblock Developing a framework for assessing information quality on the world
+  wide web.
+\newblock {\em Informing Science}, 8:159--172, 2005.
+\newblock \url{http://inform.nu/Articles/Vol8/v8p159-172Knig.pdf}.
+
+\bibitem{arl:stewardship}
+Association of Research Libraries.
+\newblock {\em To Stand the Test of Time: Long-Term Stewardship of Digital Data
+  Sets in Science and Engineering}. Association of Research Libraries, 2006.
+\newblock \url{http://www.arl.org/bm~doc/digdatarpt.pdf}.
+
+\bibitem{dcc:lifecycle}
+Digital Curation Centre.
+\newblock DCC curation lifecycle model.
+\newblock \url{http://www.dcc.ac.uk/resources/curation-lifecycle-model}.
+
+\bibitem{curry:community}
+E.~Curry, A.~Freitas, and S.~O'Riain.
+\newblock {\em The Role of Community-Driven Data Curation for Enterprises},
+  pages 25--47.
+\newblock Springer, 2010.
+\newblock \url{http://3roundstones.com/led_book/led-curry-et-al.html}.
+
+\bibitem{eckerson:bottomline}
+W.~W. Eckerson.
+\newblock Data warehousing special report: Data quality and the bottom line.
+\newblock {\em Application Development Trends}, May 2002.
+\newblock
+  \url{http://adtmag.com/articles/2002/05/01/data-warehousing-special-report-d%
+ata-quality-and-the-bottom-line_633729392210484545.aspx}.
+
+\bibitem{goble:curation}
+C.~Goble, R.~Stevens, D.~Hull, K.~Wolstencroft, and R.~Lopez.
+\newblock Data curation + process curation=data integration + science.
+\newblock {\em Briefings in Bioinformatics}, 9:506--517, July 2008.
+\newblock \url{http://bib.oxfordjournals.org/content/9/6/506.full}.
+
+\bibitem{heidorn:libraries}
+P.~B. Heidorn.
+\newblock The emerging role of libraries in data curation and e-science.
+\newblock {\em Journal of Library Administration}, 51:662--672, October 2011.
+\newblock \url{http://dx.doi.org/10.1080/01930826.2011.601269}.
+
+\bibitem{jisc:deluge}
+JISC.
+\newblock The data deluge.
+\newblock
+  \url{http://www.jisc.ac.uk/publications/briefingpapers/2004/pub_datadeluge.a%
+spx}, November 2004.
+
+\bibitem{uw:datascience}
+U.~of~Washington~Professional and C.~Education.
+\newblock Winter 2013 | data science certificate.
+\newblock
+  \url{http://www.pce.uw.edu/certificates/data-science/web-winter-2013/}, 2012.
+
+\bibitem{ogburn:imperative}
+J.~L. Ogburn.
+\newblock The imperative for data curation.
+\newblock {\em portal: Libraries and the Academy}, 10:241--246, 2010.
+\newblock \url{http://muse.jhu.edu/journals/pla/summary/v010/10.2.ogburn.html}.
+
+\bibitem{rusbridge:curation}
+C.~Rusbridge.
+\newblock Project data life course.
+\newblock
+  \url{http://digitalcuration.blogspot.com/2008/11/project-data-life-course.ht%
+ml}, 2008.
+
+\bibitem{russom:case}
+P.~Russom.
+\newblock Liability and leverage - a case for data quality.
+\newblock {\em Information Management}, August 2006.
+\newblock
+  \url{http://www.information-management.com/issues/20060801/1060128-1.html}.
+
+\bibitem{williams:lifecycle}
+P.~Williams, J.~L. John, and I.~Rowland.
+\newblock The personal curation of digital objects: A lifecycle approach.
+\newblock {\em Aslib Proceedings}, 61:340--363, 2009.
+\newblock \url{http://dx.doi.org/10.1108/00012530910973767}.
+
+\end{thebibliography}
 
 \end{document}
