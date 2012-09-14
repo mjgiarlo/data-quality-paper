@@ -23,7 +23,7 @@ This is also my first LaTeX project. Be gentle.
 A pre-print copy of this article is available in PDF format at the
 following URL:
 
-http://mjgiarlo.github.com/michael/papers/data-quality-workshop-giarlo.pdf
+https://scholarsphere.psu.edu/files/g732d898n
 
 # Build the document
 
