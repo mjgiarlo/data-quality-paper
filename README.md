@@ -1,22 +1,24 @@
 # Academic Libraries as Data Quality Hubs
 
-This position paper argues that academic libraries have a critical
-role to play serving as data quality hubs on campus, based on the need
-for increased data quality for "e-science" and on academic libraries'
-record of providing digital curation and preservation
-services. Scientific data are shown to be sufficiently at risk to
-demonstrate a clear niche for such services to be provided. Data
-quality measurements are defined, and digital curation processes are
-explained and mapped to these measurements in order to establish that
-academic libraries already have sufficient competencies ``in-house''
-to provide data quality services. Opportunities for improvement and
-challenges are identified as areas that are fruitful for future
-research and exploration.
+Academic libraries have a critical role to play as data quality hubs
+on campus, based on the need for increased data quality to sustain
+"e-science," and on academic libraries' record of providing
+curation and preservation services as part of their mission to
+provide enduring access to cultural heritage and to support
+scholarly communication. Scientific data is shown to be
+sufficiently at risk to demonstrate a clear niche for such services
+to be provided. Data quality measurements are defined, and digital
+curation processes are explained and mapped to these measurements in
+order to establish that academic libraries already have sufficient
+competencies "in-house" to provide data quality
+services. Opportunities for improvement and challenges are
+identified as areas that are fruitful for future research and
+exploration.
 
-This paper was prepared for the NSF-sponsored 2012 "Curating for Data
-Quality" workshop in Arlington, Virginia.  It uses the ACM SIG style.
+Prepared for the NSF III #1247471 "Curating for Quality: Ensuring
+Data Quality to Enable New Science" workshop in Arlington, VA, USA.
 
-This is also my first LaTeX project. Be gentle.
+This is my first LaTeX project (using the ACM SIG style.). Be gentle.
 
 # Pre-print
 
