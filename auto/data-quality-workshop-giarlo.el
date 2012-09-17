@@ -19,9 +19,9 @@
      "russom:case"
      "williams:lifecycle")
     (TeX-run-style-hooks
-     "hyperref"
      "fontenc"
      "T1"
+     "hyperref"
      "latex2e"
      "acm_proc_article-sp10"
      "acm_proc_article-sp")))
