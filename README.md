@@ -16,7 +16,8 @@ identified as areas that are fruitful for future research and
 exploration.
 
 Prepared for the NSF III #1247471 "Curating for Quality: Ensuring
-Data Quality to Enable New Science" workshop in Arlington, VA, USA.
+Data Quality to Enable New Science" workshop in Arlington, Virginia
+(September 2012).
 
 This is my first LaTeX project (using the ACM SIG style.). Be gentle.
 
