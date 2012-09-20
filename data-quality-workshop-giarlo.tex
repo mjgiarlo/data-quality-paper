@@ -1,45 +1,45 @@
 % data-quality-workshop-giarlo.tex
-% Michael J. Giarlo's position paper for the Curating for Data Quality workshop
+% Michael J. Giarlo's position paper for JLSC
 % Author: Michael J. Giarlo
-% based upon LaTeX2.09 Guidelines, 9 June 1996
 % Revisions:	2012-08-27
 % 		2012-09-16
+% 		2012-09-19
 
-\documentclass{acm_proc_article-sp}
+\documentclass[jou,12pt]{apa6}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage[style=apa,sortcites=true,sorting=nyt]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{data-quality-workshop-giarlo.bib}
+
 % For formatting URLs in references nicely and making them clickable
 % in the resulting PDF, the hyperref package is used:
 \usepackage{hyperref}
 % For formatting certain characters that you might expect to format normally
 \usepackage[T1]{fontenc}
 
-\begin{document}
+\title{Academic Libraries as Data Quality Hubs}
+% TODO: figure out how to fit this into apa6 doc class
+% \titlenote{
+%     Copyright \copyright  2012 by Michael J. Giarlo\\
+%     \\
+%     \includegraphics[bb=0 0 97 34]{by-sa.png}\\
+%     This work is licensed under a Creative Commons
+%     Attribution-ShareAlike 3.0 Unported License.\\
+%     \url{http://creativecommons.org/licenses/by-sa/3.0/}}}
 
-\title{Academic Libraries as Data Quality Hubs\titlenote{Prepared for
-    the NSF III \#1247471 workshop, \textbf{Curating for Quality: Ensuring
-      Data Quality to Enable New Science}, in Arlington, VA, USA\\
-    \\
-    Copyright \copyright \ 2012 by Michael J. Giarlo\\
-    \\
-    \includegraphics[bb=0 0 97 34]{by-sa.png}\\
-    This work is licensed under a Creative Commons
-    Attribution-ShareAlike 3.0 Unported License.\\
-    \url{http://creativecommons.org/licenses/by-sa/3.0/}}}
+\author{Michael J. Giarlo}
+\affiliation{Penn State University}
 
-\numberofauthors{1} \author{
-  \alignauthor Michael J. Giarlo\\
-  \affaddr{Penn State University}\\
-  \affaddr{E-017 Paterno Library}\\
-  \affaddr{University Park, PA  16802}\\
-  \email{michael@psu.edu} }
-\maketitle
+\shorttitle{Data Quality Hubs}
+\leftheader{Giarlo}
 
-\begin{abstract}
-  Academic libraries have a critical role to play as data quality hubs
-  on campus, based on the need for increased data quality to sustain
-  ``e-science,'' and on academic libraries' record of providing
-  curation and preservation services as part of their mission to
-  provide enduring access to cultural heritage and to support
-  scholarly communication. Scientific data is shown to be
+\abstract{Academic libraries have a critical role to play as data
+  quality hubs on campus, based on the need for increased data quality
+  to sustain ``e-science,'' and on academic libraries' record of
+  providing curation and preservation services as part of their
+  mission to provide enduring access to cultural heritage and to
+  support scholarly communication. Scientific data is shown to be
   sufficiently at risk to demonstrate a clear niche for such services
   to be provided. Data quality measurements are defined, and digital
   curation processes are explained and mapped to these measurements in
@@ -47,15 +47,14 @@
   competencies ``in-house'' to provide data quality
   services. Opportunities for improvement and challenges are
   identified as areas that are fruitful for future research and
-  exploration.
-\end{abstract}
-
-\category{E.0}{Data}{General}
-\category{H.4}{Information Systems Applications}{Miscellaneous}
-\category{H.3.7}{Digital Libraries}{General}
+  exploration.}
 
 \keywords{data quality, digital curation, digital preservation,
   academic libraries, stewardship, e-science, research data, trust}
+
+\begin{document}
+
+\maketitle
 
 \section{Scientific Data at Risk}
 Data quality is a pressing, not to mention costly, issue in industry;
@@ -625,115 +624,9 @@ has come for academic libraries to serve as data quality hubs on
 campus to enable a new generation of scientific discovery and inquiry
 for the good of our society.
 
-% No longer needed since the .bbl has been included?
-%
-% \bibliography{data-quality-workshop-giarlo}{}
-% \bibliographystyle{abbrv}
+%\bibliography{data-quality-workshop-giarlo}{}
+%\bibliographystyle{apacite}
 
-% Here is the inserted .bbl file
-\begin{thebibliography}{10}
-
-\bibitem{wiki:semweb}
-\url{http://en.wikipedia.org/wiki/Semantic_Web_Stack}.
-
-\bibitem{wiki:galaxyzoo}
-\url{http://en.wikipedia.org/wiki/Galaxy_Zoo}.
-
-\bibitem{wiki:voorwerp}
-\url{http://en.wikipedia.org/wiki/Hanny{'}s_Voorwerp}.
-
-\bibitem{adams:galaxyzoo}
-T.~Adams.
-\newblock Galaxy zoo and the new dawn of citizen science.
-\newblock {\em The Guardian}, March 2012.
-\newblock
-  \url{http://www.guardian.co.uk/science/2012/mar/18/galaxy-zoo-crowdsourcing-%
-citizen-scientists}.
-
-\bibitem{knight:quality}
-S.~Knight and J.~Burn.
-\newblock Developing a framework for assessing information quality on the world
-  wide web.
-\newblock {\em Informing Science}, 8:159--172, 2005.
-\newblock \url{http://inform.nu/Articles/Vol8/v8p159-172Knig.pdf}.
-
-\bibitem{arl:stewardship}
-Association of Research Libraries.
-\newblock {\em To Stand the Test of Time: Long-Term Stewardship of Digital Data
-  Sets in Science and Engineering}. Association of Research Libraries, 2006.
-\newblock \url{http://www.arl.org/bm~doc/digdatarpt.pdf}.
-
-\bibitem{dcc:lifecycle}
-Digital Curation Centre.
-\newblock DCC curation lifecycle model.
-\newblock \url{http://www.dcc.ac.uk/resources/curation-lifecycle-model}.
-
-\bibitem{curry:community}
-E.~Curry, A.~Freitas, and S.~O'Riain.
-\newblock {\em The Role of Community-Driven Data Curation for Enterprises},
-  pages 25--47.
-\newblock Springer, 2010.
-\newblock \url{http://3roundstones.com/led_book/led-curry-et-al.html}.
-
-\bibitem{eckerson:bottomline}
-W.~W. Eckerson.
-\newblock Data warehousing special report: Data quality and the bottom line.
-\newblock {\em Application Development Trends}, May 2002.
-\newblock
-  \url{http://adtmag.com/articles/2002/05/01/data-warehousing-special-report-d%
-ata-quality-and-the-bottom-line_633729392210484545.aspx}.
-
-\bibitem{goble:curation}
-C.~Goble, R.~Stevens, D.~Hull, K.~Wolstencroft, and R.~Lopez.
-\newblock Data curation + process curation=data integration + science.
-\newblock {\em Briefings in Bioinformatics}, 9:506--517, July 2008.
-\newblock \url{http://bib.oxfordjournals.org/content/9/6/506.full}.
-
-\bibitem{heidorn:libraries}
-P.~B. Heidorn.
-\newblock The emerging role of libraries in data curation and e-science.
-\newblock {\em Journal of Library Administration}, 51:662--672, October 2011.
-\newblock \url{http://dx.doi.org/10.1080/01930826.2011.601269}.
-
-\bibitem{jisc:deluge}
-JISC.
-\newblock The data deluge.
-\newblock
-  \url{http://www.jisc.ac.uk/publications/briefingpapers/2004/pub_datadeluge.a%
-spx}, November 2004.
-
-\bibitem{uw:datascience}
-U.~of~Washington~Professional and C.~Education.
-\newblock Winter 2013 | data science certificate.
-\newblock
-  \url{http://www.pce.uw.edu/certificates/data-science/web-winter-2013/}, 2012.
-
-\bibitem{ogburn:imperative}
-J.~L. Ogburn.
-\newblock The imperative for data curation.
-\newblock {\em portal: Libraries and the Academy}, 10:241--246, 2010.
-\newblock \url{http://muse.jhu.edu/journals/pla/summary/v010/10.2.ogburn.html}.
-
-\bibitem{rusbridge:curation}
-C.~Rusbridge.
-\newblock Project data life course.
-\newblock
-  \url{http://digitalcuration.blogspot.com/2008/11/project-data-life-course.ht%
-ml}, 2008.
-
-\bibitem{russom:case}
-P.~Russom.
-\newblock Liability and leverage - a case for data quality.
-\newblock {\em Information Management}, August 2006.
-\newblock
-  \url{http://www.information-management.com/issues/20060801/1060128-1.html}.
-
-\bibitem{williams:lifecycle}
-P.~Williams, J.~L. John, and I.~Rowland.
-\newblock The personal curation of digital objects: A lifecycle approach.
-\newblock {\em Aslib Proceedings}, 61:340--363, 2009.
-\newblock \url{http://dx.doi.org/10.1108/00012530910973767}.
-
-\end{thebibliography}
+\printbibliography
 
 \end{document}

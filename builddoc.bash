@@ -4,5 +4,6 @@ latex data-quality-workshop-giarlo
 bibtex data-quality-workshop-giarlo
 latex data-quality-workshop-giarlo
 latex data-quality-workshop-giarlo
-pdflatex data-quality-workshop-giarlo
-acroread data-quality-workshop-giarlo.pdf &
+pdftex data-quality-workshop-giarlo
+pandoc -o data-quality-workshop-giarlo.docx data-quality-workshop-giarlo.tex
+loffice data-quality-workshop-giarlo.docx &
