@@ -4,13 +4,13 @@
      "fontenc"
      "T1"
      "hyperref"
-     "biblatex"
      "csquotes"
      "babel"
      "american"
      "latex2e"
      "apa612"
      "apa6"
-     "jou"
-     "12pt")))
+     "man"
+     "12pt"
+     "biblatex")))
 

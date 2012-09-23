@@ -19,35 +19,17 @@ Prepared for the NSF III #1247471 "Curating for Quality: Ensuring
 Data Quality to Enable New Science" workshop in Arlington, Virginia
 (September 2012).
 
-This is my first LaTeX project (using the ACM SIG style.). Be gentle.
-
 # Download the PDF
 
-A pre-print copy of this article is available in PDF format at the
-following URL:
+Download [a pre-print copy of the article](https://scholarsphere.psu.edu/files/g732d898n).
 
-https://scholarsphere.psu.edu/files/g732d898n
+# Copyright and License
 
-# License/Copyright 
+Read [the copyright statement and license](/mjgiarlo/data-quality-paper/blob/master/LICENSE.md).
 
-© 2012 by Michael J. Giarlo.
+# Build the document from source
 
-This work is licensed under a Creative Commons Attribution-ShareAlike
-3.0 (CC BY-SA 3.0) License. You are free to share (to copy, distribute
-and transmit the work), to remix (to adapt the work), and to make
-commercial use of the work, under the following conditions:
-
-1. you must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work);
-1. if you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one;
-1. any of the above conditions can be waived if you get permission from the copyright holder.
-
-Read more about this Creative Commons license: 
-
-http://creativecommons.org/licenses/by-sa/3.0/
-
-# Build the document if you're a LaTeX geek
-
-```
+```bash
 $ chmod +x builddoc.bash
 $ builddoc.bash
 ```
