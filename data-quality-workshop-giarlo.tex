@@ -3,6 +3,8 @@
 \usepackage{csquotes}
 \usepackage{hyperref}
 \usepackage[T1]{fontenc}
+\usepackage{endnotes}
+\let\footnote=\endnote
 \DeclareLanguageMapping{american}{american-apa}
 \addbibresource{data-quality-workshop-giarlo.bib}
 
@@ -35,6 +37,34 @@
 
 \begin{document}
 \maketitle
+\section{Introduction}
+Academic libraries have a critical role to play as data quality hubs
+on campus, providing data quality services for the research
+enterprise. In order to sustain ``e-science'' or ``e-research,'' an
+emerging paradigm for scientific practice that relies upon data reuse,
+researchers need to be sure that the data they are using is
+high-quality data. The data that will enable the e-science paradigm is
+at risk for numerous reasons, such as its size, the rate of its
+growth, its heterogeneity, and the lack of archival storage underlying
+it. There is a growing niche for data quality services.
+
+Data quality measurements are examined to determine a common set of
+salient quality indicators, which are then examined vis-\`{a}-vis
+existing digital curation practices. Digital preservation and
+curation, emerging but nonetheless core competencies of academic
+libraries, are argued to be applicable to needed data quality
+services, by mapping curatorial practices to established data quality
+measurements.
+
+Academic libraries have a record of offering curation and preservation
+services as part of their mission to provide enduring access to
+cultural heritage and to support scholarly communication.  In short,
+academic libraries have both the wherewithal and the mission to
+intervene in a critical area on campus. Opportunities, both practical
+and aspirational, and challenges are identified as areas that are
+fruitful for future research and exploration. Academic libraries are
+ready for the challenge.
+
 \section{Research Data at Risk}
 Data quality is a pressing, not to mention costly, issue in industry;
 a 2002 study \parencite{russom:case} calculated that over \$600 billion per
@@ -60,7 +90,8 @@ around the world \parencite{jisc:deluge}.
 
 Research data is more abundant, and no less important, than ever
 before. Much of this data is deposited into disciplinary repositories
-and data banks that are funded by the U.S. government. The government,
+and data banks that are funded by the
+U.S. government\parencite{merali:peril,baker:funding}. The government,
 however, has shown a preference for funding new services over
 maintaining existing services that jeopardizes the future of
 disciplinary data repositories \parencite{merali:peril}. The 2008-2012
@@ -82,7 +113,7 @@ again''
 
 There are numerous examples in the literature of analog data enabling
 scientific inquiry decades and longer past the date it was gathered
-\footnote{\textcite{ogburn:imperative} cites Stephen Jay Gould's The
+\endnote{\textcite{ogburn:imperative} cites Stephen Jay Gould's The
   Mismeasure of Man: ``analysis and critique of cranial measurements
   in the 1800s, twin studies in the 1950s, and the rise of IQ testing
   were possible because the data were still available for scrutiny and
@@ -367,6 +398,15 @@ judgments but are \textbf{not} capable of independently ensuring data
 authenticity or trust in data; that is entirely for the individual
 user to judge.
 
+Digital curation practices within academic libraries are sufficient to
+provide a high level of data quality to the research
+enterprise. Existing services that have been built around these
+practices could justifiably be marketed as data quality services on
+campus. The term ``data quality hubs'' is thus not substantially
+different from ``data curation hubs'' but rather frames the
+competencies of academic libraries in a way that applies to the
+emerging and yet critical area of e-science.
+
 \section{Areas of Opportunity}
 
 \subsection{Curation Models}
@@ -487,7 +527,8 @@ scholarly communication. With the scramble to establish data
 management support services in the wake of the NSF's data management
 plan requirement, the timing is opportune to take advantage of the new
 and reinforced connections between libraries and researchers by
-offering new services around data quality.
+offering new services, or reframing existing curation and preservation
+services, around data quality.
 
 % this para no longer seems necessary
 %
@@ -505,7 +546,7 @@ offering new services around data quality.
 % repository service provider (whether that's the library or not) seems
 % most conducive to the long-term viability of research data.
 
-Libraries that lack the resources to sustain a new university service
+Libraries that lack the resources to sustain a university service
 around data quality, or libraries on campuses where other
 organizations (such as central IT) might be better resourced or
 positioned to provide such services, may play a less active but
@@ -632,6 +673,8 @@ quality is well within the traditional mission of libraries. The time
 has come for academic libraries to serve as data quality hubs on
 campus to enable a new generation of scientific discovery and inquiry
 for the good of our society.
+
+\theendnotes
 
 \printbibliography
 
