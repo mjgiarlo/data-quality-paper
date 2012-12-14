@@ -1,41 +1,60 @@
-\documentclass[man,12pt,biblatex]{apa6}
+\documentclass[12pt,letterpaper,titlepage,onecolumn]{article}
+\usepackage{setspace}
 \usepackage[american]{babel}
-\usepackage{csquotes}
-\usepackage{hyperref}
+\usepackage[babel]{csquotes}
 \usepackage[T1]{fontenc}
-\usepackage{endnotes}
-\let\footnote=\endnote
-\DeclareLanguageMapping{american}{american-apa}
+\usepackage[authordate,backend=biber]{biblatex-chicago}
+\usepackage{hyperref}
+\DeclareLanguageMapping{american}{cms-american}
 \addbibresource{data-quality-workshop-giarlo.bib}
 
-\title{Academic Libraries as Data Quality Hubs} \shorttitle{Data
-  Quality Hubs} \author{Michael J. Giarlo} \leftheader{Giarlo}
-\affiliation{Penn State University} \abstract{Academic libraries have
-  a critical role to play as data quality hubs on campus, based on the
-  need for increased data quality to sustain ``e-science,'' and on
-  academic libraries' record of providing curation and preservation
-  services as part of their mission to provide enduring access to
-  cultural heritage and to support scholarly communication. Research
-  data is shown to be sufficiently at risk to demonstrate a clear
-  niche for such services to be provided. Data quality measurements
-  are defined, and digital curation processes are explained and mapped
-  to these measurements in order to establish that academic libraries
-  already have sufficient competencies ``in-house'' to provide data
-  quality services. Opportunities for improvement and challenges are
-  identified as areas that are fruitful for future research and
-  exploration.}  \keywords{data quality, digital curation, digital
-  preservation, academic libraries, stewardship, e-science, research
-  data, trust} \authornote{michael@psu.edu}
+\doublespacing
+\title{Academic Libraries as Data Quality Hubs}
+% TODO: Fix for short title as running head
+% \shorttitle{Data Quality Hubs}
+% TODO
+\author{Author Name}
+% TODO: Fix this
+%\affiliation{Institution X \\
+% City, State, Country}
+% TODO: Fix this
+%\keywords{data quality, digital curation, digital preservation,
+%  academic libraries, stewardship, eScience, research data, trust}
+% TODO: Fix this
+%\authornote{Author Name, Degree
+%Author Address
+%Author Tel #
+%Author Fax #
+%Author Email \\
+%
+%Note: This work was originally done for workshop X.}
 
 \begin{document}
 \maketitle
+
+\begin{abstract}
+Academic libraries have a critical role to play as data quality hubs
+on campus, based on the need for increased data quality to sustain
+``eScience,'' and on academic libraries' record of providing curation
+and preservation services as part of their mission to provide enduring
+access to cultural heritage and to support scholarly
+communication. Research data is shown to be sufficiently at risk to
+demonstrate a clear niche for such services to be provided. Data
+quality measurements are defined, and digital curation processes are
+explained and mapped to these measurements in order to establish that
+academic libraries already have sufficient competencies ``in-house''
+to provide data quality services. Opportunities for improvement and
+challenges are identified as areas that are fruitful for future
+research and exploration.
+\end{abstract}
+
 \section{Introduction}
 Academic libraries have a critical role to play as data quality hubs
 on campus, providing data quality services for the research
-enterprise. In order to sustain ``e-science'' or ``e-research,'' an
+enterprise. In order to sustain ``eScience'' or ``eResearch,'' an
 emerging paradigm for scientific practice that relies upon data reuse,
 researchers need to be sure that the data they are using is
-high-quality data. The data that will enable the e-science paradigm is
+high-quality data. The data that will enable the eScience paradigm is
 at risk for numerous reasons, such as its size, the rate of its
 growth, its heterogeneity, and the lack of archival storage underlying
 it. There is a growing niche for data quality services.
@@ -105,7 +124,7 @@ again''
 
 There are numerous examples in the literature of analog data enabling
 scientific inquiry decades and longer past the date it was gathered
-\endnote{\textcite{ogburn:imperative} cites Stephen Jay Gould's The
+\footnote{\textcite{ogburn:imperative} cites Stephen Jay Gould's The
   Mismeasure of Man: ``analysis and critique of cranial measurements
   in the 1800s, twin studies in the 1950s, and the rise of IQ testing
   were possible because the data were still available for scrutiny and
@@ -221,7 +240,7 @@ level of administrative and staff support for this role.
 
 Academic libraries, institutional will and administrative support
 notwithstanding, are nonetheless uniquely positioned to tackle the
-problem of data quality in e-science by virtue of their record of
+problem of data quality in eScience by virtue of their record of
 effective stewardship, their commitment to providing access to
 high-quality data over the long-term, and their expertise in digital
 preservation and digital curation practices, as ``[digital] curation
@@ -274,44 +293,46 @@ comprehensive one, but merely as a tool for understanding and
 evaluating the applicability of digital curation and preservation
 practices to the measure of data quality.
 
-\begin{APAitemize}
-\item \textbf{Trust}: Evaluation of the extent to which data is
-  trusted depends on a set of subjective factors, including whether
-  the data is judged to be authentic, the uses to which the data is
-  put, the subject discipline, the reputation of the party/ies
-  responsible for the data, and the biases of the person who is
-  evaluating the data \footnote{Trust is a complex issue that though
-    relevant is too far-reaching to be within the the scope of this
-    position paper. It is nonetheless listed in the framework at the
-    very top to establish that lower layers may be entirely discounted
-    by an individual judging data quality if there are overriding
-    trust issues. This topic is fertile for subsequent research}.
-\item \textbf{Authenticity}: Evaluation of the authenticity of data
-  requires that data be understood. Authenticity in this context is a
-  rough measure of the extent to which the data is judged to be ``good
-  science,'' answering questions pertaining to, \textit{e.g.}, the
-  reliability of the instruments used to gather the data; the
-  soundness of underlying theoretical frameworks; the completeness,
-  accuracy, and validity of the data; and ontological consistency
-  within the data.
-\item \textbf{Understandability}: Evaluation of the understandability
-  of data requires that there be sufficient context (documentation,
-  metadata, or provenance) describing the data, and that the data is
-  usable.
-\item \textbf{Usability}: Usability of data requires that data is
-  discoverable and accessible; that data is in a usable file format;
-  that the individual judging the data's quality has an appropriate
-  tool to access the data; and that the data is of sufficient
-  integrity to be rendered.
-\item \textbf{Integrity}: Integrity of data assumes that the data can
-  be proven to be identical, at the bit level, to some prior accepted
-  or verified state. Data integrity may be required for usability,
-  understandability, authenticity, trust, and thus overall quality,
-  though this depends in part of the level of perturbation of
-  integrity. Integrity changes will have varying effects depending on
-  how significant the perturbation is, the file format, and where
-  within the file the perturbation has occurred.
-\end{APAitemize}
+\begin{description}
+\item[Trust] \hfill \\
+Evaluation of the extent to which data is trusted depends on a set of
+subjective factors, including whether the data is judged to be
+authentic, the uses to which the data is put, the subject discipline,
+the reputation of the party/ies responsible for the data, and the
+biases of the person who is evaluating the data \footnote{Trust is a
+  complex issue that though relevant is too far-reaching to be within
+  the the scope of this position paper. It is nonetheless listed in
+  the framework at the very top to establish that lower layers may be
+  entirely discounted by an individual judging data quality if there
+  are overriding trust issues. This topic is fertile for subsequent
+  research}.
+\item[Authenticity] \hfill \\
+Evaluation of the authenticity of data requires that data be
+understood. Authenticity in this context is a rough measure of the
+extent to which the data is judged to be ``good science,'' answering
+questions pertaining to, \textit{e.g.}, the reliability of the
+instruments used to gather the data; the soundness of underlying
+theoretical frameworks; the completeness, accuracy, and validity of
+the data; and ontological consistency within the data.
+\item[Understandability] \hfill \\
+Evaluation of the understandability of data requires that there be
+sufficient context (documentation, metadata, or provenance) describing
+the data, and that the data is usable.
+\item[Usability] \hfill \\
+Usability of data requires that data is discoverable and accessible;
+that data is in a usable file format; that the individual judging the
+data's quality has an appropriate tool to access the data; and that
+the data is of sufficient integrity to be rendered.
+\item[Integrity] \hfill \\
+Integrity of data assumes that the data can be proven to be identical,
+at the bit level, to some prior accepted or verified state. Data
+integrity may be required for usability, understandability,
+authenticity, trust, and thus overall quality, though this depends in
+part of the level of perturbation of integrity. Integrity changes will
+have varying effects depending on how significant the perturbation is,
+the file format, and where within the file the perturbation has
+occurred.
+\end{description}
 
 The relationship between the quality dimensions in this framework is
 analogous to that of the Semantic Web Layer Cake in that ``each layer
@@ -397,7 +418,7 @@ practices could justifiably be marketed as data quality services on
 campus. The term ``data quality hubs'' is thus not substantially
 different from ``data curation hubs'' but rather frames the
 competencies of academic libraries in a way that applies to the
-emerging and yet critical area of e-science.
+emerging and yet critical area of eScience.
 
 \section{Areas of Opportunity}
 
@@ -513,7 +534,7 @@ way than requiring intensive human curation of every data set.
 
 Academic libraries have an opportunity to serve as data quality hubs
 on campus, extending their established digital curation and
-preservation services to the research enterprise, doing for e-science
+preservation services to the research enterprise, doing for eScience
 what libraries have a wealth of experience doing for other areas of
 scholarly communication. With the scramble to establish data
 management support services in the wake of the NSF's data management
@@ -561,7 +582,7 @@ of extreme decentralization or sparse collaboration.
 
 There is a tremendous opportunity as well to offer workshops and
 otherwise emphasize the value of curation in providing data quality
-for e-science, and also to publicize the ``curation begins before
+for eScience, and also to publicize the ``curation begins before
 creation'' mantra. The sooner libraries can insert themselves into the
 research process, the better the data quality situation will be on
 campus. Libraries need to figure out how to ``hack'' academic culture
@@ -666,8 +687,6 @@ has come for academic libraries to serve as data quality hubs on
 campus to enable a new generation of scientific discovery and inquiry
 for the good of our society.
 
-\theendnotes
-
-\printbibliography
+\printbibliography[title=References]
 
 \end{document}
