@@ -29,3 +29,9 @@
 *.maf
 *.mtc
 *.mtc0
+
+# Emacs artifacts
+auto/
+*~
+#*
+
