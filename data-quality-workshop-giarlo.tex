@@ -13,14 +13,15 @@
 \pagestyle{myheadings}
 \markright{DATA QUALITY HUBS}
 \title{Academic Libraries as Data Quality Hubs}
-\author{Author Name \\
-Institution X \\
-City, State, Country \\
-Author Tel \# \\
-Author Fax \# \\
-Author Email \\
-\\
-Note: Author note}
+%\author{Author Name \\
+%Institution X \\
+%City, State, Country \\
+%Author Tel \# \\
+%Author Fax \# \\
+%Author Email \\
+%\\
+%Note: Author note}
+\defbibheading{references}[\bibname]{\section*{#1}\markright{DATA QUALITY HUBS}}
 
 \begin{document}
 \maketitle
@@ -585,7 +586,7 @@ campus. Libraries need to figure out how to ``hack'' academic culture
 and scientific practice in such a way that curatorial skills are
 considered required within the new scientific process.
 
-\subsection{It Takes a Village...}
+\subsection{It Takes a Village}
 
 New ``data science'' programs such as the certificate program at the
 University of Washington \autocite{uw:datascience} give the author hope
@@ -684,6 +685,6 @@ campus to enable a new generation of scientific discovery and inquiry
 for the good of our society.
 
 \newpage
-\printbibliography[title=References]
+\printbibliography[title=References,heading=references]
 
 \end{document}
