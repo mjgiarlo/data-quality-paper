@@ -1,62 +1,55 @@
-\documentclass[12pt,letterpaper,titlepage,onecolumn,biblatex,backend=biber,style=chicago-authordate]{article}
+\documentclass[man,12pt,biblatex]{apa6}
 \usepackage{setspace}
 \usepackage[american]{babel}
 \usepackage[babel]{csquotes}
 \usepackage[T1]{fontenc}
-\usepackage[authordate,backend=biber]{biblatex-chicago}
 \usepackage{hyperref}
-\DeclareLanguageMapping{american}{cms-american}
+\usepackage{endnotes}
+\DeclareLanguageMapping{american}{american-apa}
 \addbibresource{data-quality-workshop-giarlo.bib}
+\renewcommand{\notesname}{Notes}
+
+\title{Academic Libraries as Data Quality Hubs}
+
+\shorttitle{Data Quality Hubs}
+
+\author{Michael J. Giarlo}
+
+\leftheader{Giarlo}
+
+\affiliation{Penn State University}
+
+\authornote{michael@psu.edu}
+
+\keywords{data quality, digital curation, digital
+  preservation, academic libraries, stewardship, e-science, research
+  data}
+
+\abstract{Academic libraries have a critical role to play as data
+  quality hubs on campus, based on the need for increased data quality
+  to sustain ``e-science,'' and on academic libraries' record of
+  providing curation and preservation services as part of their
+  mission to provide enduring access to cultural heritage and to
+  support scholarly communication. Research data is shown to be
+  sufficiently at risk to demonstrate a clear niche for such services
+  to be provided. Data quality measurements are defined, and digital
+  curation processes are explained and mapped to these measurements in
+  order to establish that academic libraries already have sufficient
+  competencies ``in-house'' to provide data quality
+  services. Opportunities for improvement and challenges are
+  identified as areas that are fruitful for future research and
+  exploration.}
 
 \doublespacing
-\pagestyle{empty}
-%\pagestyle{myheadings}
-% TODO: Fix this
-%\markright{DATA QUALITY HUBS}
-\title{Academic Libraries as Data Quality Hubs}
-\author{%
-  Michael J. Giarlo \\
-  Penn State University \\
-  University Park, Pennsylvania, United States \\
-  814-863-8828 \\
-  michael@psu.edu \\
-  \\
-  Note: Originally prepared for the NSF III \#1247471 ``Curating for
-  Quality: Ensuring Data Quality to Enable New Science'' workshop in
-  Arlington, Virginia (September 2012)}
-\defbibheading{references}[\bibname]{\section*{#1}\markright{DATA QUALITY HUBS}}
-
 \begin{document}
-% TODO: Restore this if accepted for publication
-%\maketitle
-% TODO: Restore this if accepted for publication
-%\begin{abstract}
-%Academic libraries have a critical role to play as data quality hubs
-%on campus, based on the need for increased data quality to sustain
-%``eScience,'' and on academic libraries' record of providing curation
-%and preservation services as part of their mission to provide enduring
-%access to cultural heritage and to support scholarly
-%communication. Research data is shown to be sufficiently at risk to
-%demonstrate a clear niche for such services to be provided. Data
-%quality measurements are defined, and digital curation processes are
-%explained and mapped to these measurements in order to establish that
-%academic libraries already have sufficient competencies ``in-house''
-%to provide data quality services. Opportunities for improvement and
-%challenges are identified as areas that are fruitful for future
-%research and exploration.
-%\\
-%
-%{\bf Keywords:} data quality, digital curation, digital preservation, academic
-%libraries, stewardship, eScience, research data
-%\end{abstract}
-
+\maketitle
 \section{Introduction}
 Academic libraries have a critical role to play as data quality hubs
 on campus, providing data quality services for the research
-enterprise. In order to sustain ``eScience'' or ``eResearch,'' an
+enterprise. In order to sustain ``e-science'' or ``e-research,'' an
 emerging paradigm for scientific practice that relies upon data reuse,
 researchers need to be sure that the data they are using is
-high-quality data. The data that will enable the eScience paradigm is
+high-quality data. The data that will enable the e-science paradigm is
 at risk for numerous reasons, such as its size, the rate of its
 growth, its heterogeneity, and the lack of archival storage underlying
 it. There is a growing niche for data quality services.
@@ -80,11 +73,11 @@ ready for the challenge.
 
 \section{Research Data at Risk}
 Data quality is a pressing, not to mention costly, issue in industry;
-a 2002 study \autocite{russom:case} calculated that over \$600 billion per
+a 2002 study \parencite{russom:case} calculated that over \$600 billion per
 year was spent on ``data quality problems''\ 
-\autocite{eckerson:bottomline}.  At the same time, data quality issues
+\parencite{eckerson:bottomline}.  At the same time, data quality issues
 have become an area of growing attention within academia and academic
-libraries \autocite{heidorn:libraries,arl:stewardship,ogburn:imperative,jisc:deluge},
+libraries \parencite{heidorn:libraries,arl:stewardship,ogburn:imperative,jisc:deluge},
 as scientific practices evolve to exploit robust campus
 cyberinfrastructure and as funding agencies, such as the National
 Science Foundation and the National Institutes of Health, increasingly
@@ -96,23 +89,23 @@ throughput, and storage capacity have grown, resulting in an explosion
 of research data.  It is not uncommon for experiments, in some
 disciplines more than others, to produce more data than their
 principal investigators and research assistants can
-handle \autocite{adams:galaxyzoo}. Due to the wealth of data that is
+handle \parencite{adams:galaxyzoo}. Due to the wealth of data that is
 being produced, scientific practice is changing; the gathering of data
 for one experiment may drive dozens or hundreds of other experiments
-around the world \autocite{jisc:deluge}.
+around the world \parencite{jisc:deluge}.
 
 Research data is more abundant, and no less important, than ever
 before. Much of this data is deposited into disciplinary repositories
 and data banks that are funded by the
-U.S. government\autocite{merali:peril,baker:funding}. The government,
+U.S. government\parencite{merali:peril,baker:funding}. The government,
 however, has shown a preference for funding new services over
 maintaining existing services that jeopardizes the future of
-disciplinary data repositories \autocite{merali:peril}. The 2008-2012
+disciplinary data repositories \parencite{merali:peril}. The 2008-2012
 global recession has exacerbated the funding crisis for such
-repositories \autocite{baker:funding}.
+repositories \parencite{baker:funding}.
 
 The long-term stewardship of research data is thus at
-risk \autocite{ogburn:imperative}.  In light of the funding crises
+risk \parencite{ogburn:imperative}.  In light of the funding crises
 faced by government-supported disciplinary data repositories, which
 threatens the availability of research data, there is a niche for
 centrally-funded organizations such as academic libraries and academic
@@ -122,11 +115,11 @@ not housed in long-lived institutions such as libraries. This
 situation threatens the underlying principles of scientific
 replicability since in many cases data cannot readily be collected
 again''
-\autocite{heidorn:libraries}.
+\parencite{heidorn:libraries}.
 
 There are numerous examples in the literature of analog data enabling
 scientific inquiry decades and longer past the date it was gathered
-\footnote{\textcite{ogburn:imperative} cites Stephen Jay Gould's The
+\endnote{\textcite{ogburn:imperative} cites Stephen Jay Gould's The
   Mismeasure of Man: ``analysis and critique of cranial measurements
   in the 1800s, twin studies in the 1950s, and the rise of IQ testing
   were possible because the data were still available for scrutiny and
@@ -146,22 +139,22 @@ standards-based, active management practices that guide data
 throughout the research life cycle, as well as ensure the long-term
 usability of these digital resources. Curation involves ways of
 organizing, displaying, and repurposing preserved data''
-\autocite{arl:stewardship}.
+\parencite{arl:stewardship}.
 
 Digital preservation and digital curation, though relatively new
 practices, are widely treated in the literature
-\autocite{jisc:deluge,curry:community,goble:curation,ogburn:imperative,heidorn:libraries,williams:lifecycle,arl:stewardship}. Digital
+\parencite{jisc:deluge,curry:community,goble:curation,ogburn:imperative,heidorn:libraries,williams:lifecycle,arl:stewardship}. Digital
 curation aims to make selected data accessible, usable, and useful
 throughout its lifecycle. Digital curation subsumes digital
 preservation; without viable data, which digital preservation enables,
-there's nothing to be curated \footnote{This characterization of
+there's nothing to be curated \endnote{This characterization of
   digital curation and digital preservation is a mere gloss; more may
   be found, for instance, on the Digital Curation Centre's website:
   \url{http://www.dcc.ac.uk/digital-curation}.}.
 
 An oft-cited mantra on the practice of digital curation is that
 ``curation begins before creation [of the data]''
-\autocite{rusbridge:curation}. And yet, ``[b]y the time knowledge in
+\parencite{rusbridge:curation}. And yet, ``[b]y the time knowledge in
 digital form makes its way to a safe and sustainable repository [such
   as those provided by academic libraries], it may be unreadable,
 corrupted, erased, or otherwise impossible to recover and
@@ -174,19 +167,19 @@ need for a specialized knowledge base --- and experience --- to handle
 data.  Data also may be endangered by the practices of scholars who
 regard their data as having little value beyond the confines of a
 small group, a specific project, or a specified period''
-\autocite{ogburn:imperative}.
+\parencite{ogburn:imperative}.
 
-\subsubsection{\textit{Post-Hoc Curation Considered...}}
+\subsubsection{\textit{Post-Hoc Curation Considered}}
 
 As digital curation is a new practice, and is generally centered
-within cultural heritage organizations \footnote{The work of
+within cultural heritage organizations \endnote{The work of
   discipline-specific repositories such as \textit{e.g.}, the Protein Data Bank,
   GenBank, the Biomedical Magnetic Resonance Data Bank, Dryad, and others
   are notable exceptions.}, \textit{post-hoc} curation is an unfortunate
 fact of life; researchers lack the incentive, the resources, the time,
-or the expertise to curate their own data \footnote{Hereafter referred
+or the expertise to curate their own data \endnote{Hereafter referred
   to as ``sheer curation or curation at source''
-  \autocite{curry:community}.}, and so its curation falls to other parties
+  \parencite{curry:community}.}, and so its curation falls to other parties
 after the data has been created, and often after it has been
 ``archived.'' For especially massive data sets, furthermore, it is difficult
 even to imagine, \textit{e.g.}, a research institute or academic department
@@ -202,7 +195,7 @@ provide sufficient context for a resource such that future users can
 understand what an object is, where it came from, why it is
 significant, and how to use it. Context is often provided via
 documentation, descriptive metadata, or both
-\autocite{arl:stewardship,heidorn:libraries,curry:community,jisc:deluge}. The
+\parencite{arl:stewardship,heidorn:libraries,curry:community,jisc:deluge}. The
 creator(s) of the data, \textbf{not} its \textit{post-hoc} curators,
 are best equipped to provide this context; to get a sense of this
 distinction, consider the difference between the tasks of cataloging
@@ -226,7 +219,7 @@ research and teaching institutions are incredibly varied. Many
 representational schemes for the data and metadata will be
 required. No one individual will have all of the required skills. Data
 curators will need to collaborate closely with the data providers to
-understand the data'' \autocite{heidorn:libraries}. Whether researchers
+understand the data'' \parencite{heidorn:libraries}. Whether researchers
 will have sufficient time, resources, and inclination to collaborate
 with academic libraries on the work of curating research data at scale
 is yet to be seen.
@@ -242,12 +235,12 @@ level of administrative and staff support for this role.
 
 Academic libraries, institutional will and administrative support
 notwithstanding, are nonetheless uniquely positioned to tackle the
-problem of data quality in eScience by virtue of their record of
+problem of data quality in e-science by virtue of their record of
 effective stewardship, their commitment to providing access to
 high-quality data over the long-term, and their expertise in digital
 preservation and digital curation practices, as ``[digital] curation
 is a process that can ensure the quality of data and its fitness for
-use'' \autocite{curry:community}. It is worth examining this claim in the
+use'' \parencite{curry:community}. It is worth examining this claim in the
 context of a framework for measuring data quality.
 
 % This stuff doesn't seem to fit any longer
@@ -255,13 +248,13 @@ context of a framework for measuring data quality.
 % While cyberinfrastructure has become more robust, usage of the
 % Internet continued to grow; between 2000 and 2010 alone, Internet
 % usage rose from nearly 7\% of the global population to over 30\%
-% \footnote{Data visualized here:\url{http://www.google.com/publicdata/explore?ds=d5bncppjof8f9_&met_y=it_net_user_p2&tdim=true&dl=en&hl=en&q=global+internet+usage}}.
+% \endnote{Data visualized here:\url{http://www.google.com/publicdata/explore?ds=d5bncppjof8f9_&met_y=it_net_user_p2&tdim=true&dl=en&hl=en&q=global+internet+usage}}.
 % trust networks - how are they different now? japanese research example
-% (more numerous and more anonymous) \autocite{timmer:faking}, galaxyzoo
+% (more numerous and more anonymous) \parencite{timmer:faking}, galaxyzoo
 % example (much larger and more participatory (citizen
-% science)) \autocite{adams:galaxyzoo}.
+% science)) \parencite{adams:galaxyzoo}.
 %
-% refer to \autocite{timmer:faking} issue. hacking trust networks, new trust
+% refer to \parencite{timmer:faking} issue. hacking trust networks, new trust
 % networks, more resilient trust networks -- look into identity
 % assurance (concept from federated identity and access management area)
 % and assurance levels, specifically applying it to data authenticity
@@ -275,7 +268,7 @@ There are a number of theoretical frameworks quantifying data quality
 measures already established, and Knight's 2005 paper compares a
 selection of a dozen ``widely accepted [information quality]
 Frameworks collated from the last decade of [information science]
-research'' \autocite{knight:quality}. Common features are identified for
+research'' \parencite{knight:quality}. Common features are identified for
 data quality (or information quality), such as that it is a concept
 with multiple dimensions, wherein the overall quality is a function of
 successive indicators.  Another common feature of data quality
@@ -287,7 +280,7 @@ objectivity spectrum.
 The following framework is distilled from Knight's comparison of
 quality frameworks, and constitutes ``a series of quality dimensions
 which represent a set of desirable characteristics for an information
-resource'' \autocite{curry:community}. The framework is then applied to
+resource'' \parencite{curry:community}. The framework is then applied to
 the domain of research data quality as viewed from my perspective,
 that of a digital preservation technologist and practitioner of
 digital curation. It is not offered as a novel framework, nor a
@@ -295,51 +288,49 @@ comprehensive one, but merely as a tool for understanding and
 evaluating the applicability of digital curation and preservation
 practices to the measure of data quality.
 
-\begin{description}
-\item[Trust] \hfill \\
-Evaluation of the extent to which data is trusted depends on a set of
-subjective factors, including whether the data is judged to be
-authentic, the uses to which the data is put, the subject discipline,
-the reputation of the party/ies responsible for the data, and the
-biases of the person who is evaluating the data \footnote{Trust is a
-  complex issue that though relevant is too far-reaching to be within
-  the the scope of this position paper. It is nonetheless listed in
-  the framework at the very top to establish that lower layers may be
-  entirely discounted by an individual judging data quality if there
-  are overriding trust issues. This topic is fertile for subsequent
-  research}.
-\item[Authenticity] \hfill \\
-Evaluation of the authenticity of data requires that data be
-understood. Authenticity in this context is a rough measure of the
-extent to which the data is judged to be ``good science,'' answering
-questions pertaining to, \textit{e.g.}, the reliability of the
-instruments used to gather the data; the soundness of underlying
-theoretical frameworks; the completeness, accuracy, and validity of
-the data; and ontological consistency within the data.
-\item[Understandability] \hfill \\
-Evaluation of the understandability of data requires that there be
-sufficient context (documentation, metadata, or provenance) describing
-the data, and that the data is usable.
-\item[Usability] \hfill \\
-Usability of data requires that data is discoverable and accessible;
-that data is in a usable file format; that the individual judging the
-data's quality has an appropriate tool to access the data; and that
-the data is of sufficient integrity to be rendered.
-\item[Integrity] \hfill \\
-Integrity of data assumes that the data can be proven to be identical,
-at the bit level, to some prior accepted or verified state. Data
-integrity may be required for usability, understandability,
-authenticity, trust, and thus overall quality, though this depends in
-part of the level of perturbation of integrity. Integrity changes will
-have varying effects depending on how significant the perturbation is,
-the file format, and where within the file the perturbation has
-occurred.
-\end{description}
+\begin{APAitemize}
+\item \textbf{Trust}: Evaluation of the extent to which data is
+  trusted depends on a set of subjective factors, including whether
+  the data is judged to be authentic, the uses to which the data is
+  put, the subject discipline, the reputation of the party/ies
+  responsible for the data, and the biases of the person who is
+  evaluating the data \endnote{Trust is a complex issue that though
+    relevant is too far-reaching to be within the the scope of this
+    position paper. It is nonetheless listed in the framework at the
+    very top to establish that lower layers may be entirely discounted
+    by an individual judging data quality if there are overriding
+    trust issues. This topic is fertile for subsequent research}.
+\item \textbf{Authenticity}: Evaluation of the authenticity of data
+  requires that data be understood. Authenticity in this context is a
+  rough measure of the extent to which the data is judged to be ``good
+  science,'' answering questions pertaining to, \textit{e.g.}, the
+  reliability of the instruments used to gather the data; the
+  soundness of underlying theoretical frameworks; the completeness,
+  accuracy, and validity of the data; and ontological consistency
+  within the data.
+\item \textbf{Understandability}: Evaluation of the understandability
+  of data requires that there be sufficient context (documentation,
+  metadata, or provenance) describing the data, and that the data is
+  usable.
+\item \textbf{Usability}: Usability of data requires that data is
+  discoverable and accessible; that data is in a usable file format;
+  that the individual judging the data's quality has an appropriate
+  tool to access the data; and that the data is of sufficient
+  integrity to be rendered.
+\item \textbf{Integrity}: Integrity of data assumes that the data can
+  be proven to be identical, at the bit level, to some prior accepted
+  or verified state. Data integrity may be required for usability,
+  understandability, authenticity, trust, and thus overall quality,
+  though this depends in part of the level of perturbation of
+  integrity. Integrity changes will have varying effects depending on
+  how significant the perturbation is, the file format, and where
+  within the file the perturbation has occurred.
+\end{APAitemize}
 
 The relationship between the quality dimensions in this framework is
 analogous to that of the Semantic Web Layer Cake in that ``each layer
 exploits and uses capabilities of the layers below''
-\autocite{wiki:semweb}. Viewed from the bottom up, this framework asserts
+\parencite{wiki:semweb}. Viewed from the bottom up, this framework asserts
 that data integrity may be necessary but not sufficient for data
 quality; if the data lacks integrity, it may not be usable, and thus
 not understandable, authentic, or trustable --- a very low measure of
@@ -354,7 +345,7 @@ usable, understandable, or fixed in integrity.
 Within the defined framework, how might the practice of curation help
 ensure data quality? Each of the indicators in this framework is
 evaluated within the context of the digital curation lifecycle
-\autocite{dcc:lifecycle}.
+\parencite{dcc:lifecycle}.
 
 \subsection{Integrity}
 
@@ -365,14 +356,14 @@ verification, replication, media refreshing, version management, and
 file-level backups. These tactics taken together should be sufficient
 to ensure that the data remains in the same state as originally
 processed. Assuming that the data was authentic to begin with
-\footnote{Authenticity is evaluated higher up the stack.}, the
+\endnote{Authenticity is evaluated higher up the stack.}, the
 effective practice of curation should provide data integrity.
 
 \subsection{Usability}
 
 Three of the seven sequential actions defined in the lifecycle model
 have a direct impact on the usability of data. First, the Create or
-Receive action \footnote{Again underscoring the mantra that ``curation
+Receive action \endnote{Again underscoring the mantra that ``curation
   begins before creation''} should include determination of an
 appropriate file format for the data, choosing a format that is judged
 to be widely accessible and preservable. The Access, Use, \& Reuse
@@ -420,7 +411,7 @@ practices could justifiably be marketed as data quality services on
 campus. The term ``data quality hubs'' is thus not substantially
 different from ``data curation hubs'' but rather frames the
 competencies of academic libraries in a way that applies to the
-emerging and yet critical area of eScience.
+emerging and yet critical area of e-science.
 
 \section{Areas of Opportunity}
 
@@ -452,34 +443,34 @@ models, which may offer academic libraries a way to scale
 deficiencies of this approach: ``[d]ata curation teams have found it
 difficult to scale the traditional [\textit{post-hoc} curation]
 approach and have tapped into community crowd-sourcing and automated
-and semi-automated curation algorithms'' \autocite{curry:community}.
+and semi-automated curation algorithms'' \parencite{curry:community}.
 
 The rise of the ``citizen science'' paradigm, such as demonstrated in
 the Galaxy Zoo and Zooniverse projects
-\autocite{wiki:galaxyzoo,adams:galaxyzoo}, suggests community
+\parencite{wiki:galaxyzoo,adams:galaxyzoo}, suggests community
 crowd-sourcing as a tactic that may be used to complement an
 institution's curation model. These initiatives leverage the ``wisdom
-of the crowd'' in curating \footnote{Or, at least, classifying,
+of the crowd'' in curating \endnote{Or, at least, classifying,
   cataloging, and otherwise annotating these data sets, even if it not
   inclusive of all activities within the curation lifecycle.}  massive
 data sets such as the astronomical image data in the original Galaxy
 Zoo project. Galaxy Zoo in particular has been wildly successful,
 attracting a user base numbering into the hundreds of thousands, who
 have worked together to classify hundreds of millions of records
-\autocite{adams:galaxyzoo}.
+\parencite{adams:galaxyzoo}.
 
 There are numerous incentives at play in crowdsourcing, such as access
 to broadly interesting and compellingly visualized data; competition;
 and a desire for the layperson to be involved with \textit{bona fide}
 research with opportunities to make novel scientific discoveries
 despite limited domain expertise. Consider ``Hanny's
-\textit{Voorwerp} \autocite{wiki:voorwerp},'' an astronomical body
+\textit{Voorwerp} \parencite{wiki:voorwerp},'' an astronomical body
 discovered in Galaxy Zoo's data set by an amateur astronomer. The
 \textit{Voorwerp} is now being studied by more than one professional
 astronomer, studies that may never have happened if not for the
 serendipitous discovery of an untrained curator.  There are numerous
 other collaborative or crowd-sourced curation efforts highlighted in
-Curry's chapter on community data curation \autocite{curry:community}.
+Curry's chapter on community data curation \parencite{curry:community}.
 
 Galaxy Zoo and other Zooniverse projects demonstrate aspects of a
 model that could be repurposed in academic libraries as libraries seek
@@ -488,11 +479,11 @@ alternative models for research data curation that scale out.
 As mentioned earlier, some combination of \textit{post-hoc} curation
 and curation-at-source seems effective. The Galaxy Zoo project
 balances crowd-sourced curation with verification by trained
-astronomers \autocite{adams:galaxyzoo}, who verify samples of curatorial
+astronomers \parencite{adams:galaxyzoo}, who verify samples of curatorial
 work over time, thus enabling network effects to take place --- this
 form of training or correction is not unlike the balance between human
 correction and machine learning algorithms, or, \textit{e.g.}, the
-reCAPTCHA \footnote{\url{http://www.google.com/recaptcha}}
+reCAPTCHA \endnote{\url{http://www.google.com/recaptcha}}
 service. This sort of delegation of quality to the community is not
 unlike a principle found in the open source software world, which is
 that the more eyes are on a codebase, the more likely it is that
@@ -536,7 +527,7 @@ way than requiring intensive human curation of every data set.
 
 Academic libraries have an opportunity to serve as data quality hubs
 on campus, extending their established digital curation and
-preservation services to the research enterprise, doing for eScience
+preservation services to the research enterprise, doing for e-science
 what libraries have a wealth of experience doing for other areas of
 scholarly communication. With the scramble to establish data
 management support services in the wake of the NSF's data management
@@ -548,7 +539,7 @@ services, around data quality.
 % this para no longer seems necessary
 %
 % Some have argued that the library is the optimal home for digital
-% blah...  \autocite{heidorn:libraries} argue that the library is the
+% blah...  \parencite{heidorn:libraries} argue that the library is the
 % natural place for digital data to then be deposited, preserved, and
 % migrated. while I agree that from a consolidation of services
 % perspective, it makes sense to have these functions centrally provided
@@ -578,13 +569,13 @@ pointing at relevant services on campus and abroad, helping to
 Libraries can also offer assistance in the form of instruction, not
 radically different from existing information literacy programs,
 particularly around practical tools and processes pertaining to
-personal digital curation \autocite{williams:lifecycle}. Such instruction
+personal digital curation \parencite{williams:lifecycle}. Such instruction
 could be especially helpful at institutions where the culture is that
 of extreme decentralization or sparse collaboration.
 
 There is a tremendous opportunity as well to offer workshops and
 otherwise emphasize the value of curation in providing data quality
-for eScience, and also to publicize the ``curation begins before
+for e-science, and also to publicize the ``curation begins before
 creation'' mantra. The sooner libraries can insert themselves into the
 research process, the better the data quality situation will be on
 campus. Libraries need to figure out how to ``hack'' academic culture
@@ -594,7 +585,7 @@ considered required within the new scientific process.
 \subsection{It Takes a Village}
 
 New ``data science'' programs such as the certificate program at the
-University of Washington \autocite{uw:datascience} give the author hope
+University of Washington \parencite{uw:datascience} give the author hope
 that there is some movement in this area. The focus on data gathering,
 analysis, and visualization is an important start; quality and
 curation, however, are noticeably absent. A more complete degree
@@ -619,7 +610,7 @@ stewardship, namely that ``[a] change in both the culture of federal
 funding agencies and of the research enterprise regarding digital data
 stewardship is necessary if the programs and initiatives that support
 the long-term preservation, curation, and stewardship of digital data
-are to be successful'' \autocite{arl:stewardship}.
+are to be successful'' \parencite{arl:stewardship}.
 
 % Not really a good fit anymore.
 %
@@ -627,14 +618,14 @@ are to be successful'' \autocite{arl:stewardship}.
 % scholarly publications, and associated communication. The potential
 % for an expanded role for research libraries in the area of digital
 % data stewardship affords opportunities to address these important
-% linkages.'' \autocite{arl:stewardship}
+% linkages.'' \parencite{arl:stewardship}
 
 \subsection{Our Challenge}
 
 Are academic libraries adequately prepared for this role?  A new suite
 of data quality services on campus may require not insignificant
 re-skilling and re-education of the workforce, and may also require
-some reorganization and redefinition of positions \autocite{jisc:deluge}.
+some reorganization and redefinition of positions \parencite{jisc:deluge}.
 
 The provision of data quality services and extension of traditional
 stewardship to the realm of research data may not be feasible given
@@ -642,12 +633,12 @@ the economic environment and existing commitments of academic
 libraries. Data quality presents an opportunity to offer new
 rationales to University administration for additional funding. The
 long-term stewardship risks associated with government-supported
-disciplinary data repositories \autocite{baker:funding,merali:peril}
+disciplinary data repositories \parencite{baker:funding,merali:peril}
 may help make the case that centrally-funded data services protect the
 University's investments in new research, increasing return on
 investment by ensuring for its long-term stewardship. As research data
 is typically owned by the institution itself in the United
-States \autocite{dhhs:tutorial,dhhs:guidelines}, and not individual
+States \parencite{dhhs:tutorial,dhhs:guidelines}, and not individual
 researchers, it is in the best interest of the institution to take a
 proactive role in safeguarding the data.
 
@@ -659,7 +650,7 @@ proactive role in safeguarding the data.
 % data that require urgent attention. A survey of our special and
 % general collections may discover and expose data we already own amid
 % our other holdings. Our current methods of cataloging and metadata
-% application will likely need enhancement'' \autocite{ogburn:imperative}
+% application will likely need enhancement'' \parencite{ogburn:imperative}
 % (archival principles!)
 
 % This is kinda duplicative now.
@@ -679,7 +670,7 @@ available for a reasonable life span. This will require librarians to
 be conversant with the language and methods of science, at the table
 for campus cyberinfrastructure planning, and working with researchers
 at the beginning stages of grant planning''
-\autocite{ogburn:imperative}.
+\parencite{ogburn:imperative}.
 
 Academic libraries need to be conversant with the language and methods
 of science and to be involved with advances in campus
@@ -689,7 +680,8 @@ has come for academic libraries to serve as data quality hubs on
 campus to enable a new generation of scientific discovery and inquiry
 for the good of our society.
 
-\newpage
-\printbibliography[title=References,heading=references]
+\theendnotes
+
+\printbibliography[title=References]
 
 \end{document}
